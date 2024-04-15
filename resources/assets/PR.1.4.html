@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Pet PASS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- START : Header -->
+        <header class="header">
+            <div class="container">
+                <a href="#">
+                    <i class="ico i-back"></i>
+                </a>
+                <h3>국가동물등록 신청</h3>
+            </div>
+            <progress id="file" max="100" value="70">70%</progress>
+        </header>
+        <!-- END : Header -->
+
+        <!-- START : Content -->
+        <main>
+            <form action="">
+                <section class="container">
+                    <div class="info-input">
+                        <h2>반려동물 정보</h2>
+                        <div class="input-wrap">
+                            <div class="input-group">
+                                <label for="">이름<span>*</span></label>
+                                <input type="text" id="text02" placeholder="반려동물의 이름을 입력해주세요.">
+                            </div>
+                            <div class="input-group">
+                                <label for="">품종<span>*</span></label>
+                                <div class="input-search open-modal" data-modal-id="kindModal">
+                                    <input type="text" id="text02" placeholder="품종을 선택해주세요.">
+                                    <button type="button"><i class="ico i-search"></i></button>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="">털색<span>*</span></label>
+                                <input type="text" id="text02" placeholder="품종 선택 후 털색을 입력해주세요.">
+                            </div>
+                            <div class="radio-group outline">
+                                <h4>성별<span>*</span></h4>
+                                <div class="radio-area">
+                                    <input type="radio" id="boy" name="gender">
+                                    <label for="boy">남자아이</label>
+                                    <input type="radio" id="lady" name="gender">
+                                    <label for="lady">여자아이</label>
+                                </div>
+                            </div>
+                            <div class="radio-group outline">
+                                <h4>중성화 여부<span>*</span></h4>
+                                <div class="radio-area">
+                                    <input type="radio" id="complete" name="neuter">
+                                    <label for="complete">완료</label>
+                                    <input type="radio" id="incomplete" name="neuter">
+                                    <label for="incomplete">미완료</label>
+                                </div>
+                            </div>
+                            <div class="date-group">
+                                <label for="">생년월일<span>*</span></label>
+                                <div class="date-area">
+                                    <input type="date" placeholder="생년월일을 입력해주세요." required>
+                                    <i class="ico i-calendar"></i>
+                                </div>
+                            </div>
+                            <div class="date-group">
+                                <label for="">입양일<span>*</span></label>
+                                <div class="date-area">
+                                    <input type="date" placeholder="입양일을 입력해주세요." required>
+                                    <i class="ico i-calendar"></i>
+                                </div>
+                                <div class="check-group blue-circle">
+                                    <input type="checkbox" id="chk01">
+                                    <label for="chk01">생년월일과 동일해요.</label>
+                                </div>
+                            </div>
+                            <div class="radio-group outline">
+                                <h4>체형</h4>
+                                <div class="radio-area">
+                                    <input type="radio" id="slim" name="bodysize">
+                                    <label for="slim">날씬해요</label>
+                                    <input type="radio" id="plmup" name="bodysize">
+                                    <label for="plmup">적당해요</label>
+                                    <input type="radio" id="fat" name="bodysize">
+                                    <label for="fat">뚱뚱해요</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="">몸무게(Kg)</label>
+                                <input type="number" id="text02" placeholder="몸무게를 입력해주세요.(소수점 두자리까지 입력가능)">
+                            </div>
+                            <div class="input-group">
+                                <label for="">외모특이사항</label>
+                                <input type="number" id="text02" placeholder="외모특이사항을 입력해주세요.">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="btn-group bottom">
+                    <button type="button" class="btn btn-blue btn-md">다음</button>
+                </div>
+            </form>
+        </main>
+        <!-- END : Content -->
+    </div>
+
+
+
+    <!-- START : kindModal -->
+    <div id="kindModal" class="modal-wrap full-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>품종 검색</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-wrap">
+                        <form action="">
+                            <div class="input-group">
+                                <div class="input-search">
+                                    <input type="text" id="text02" placeholder="검색어를 입력해주세요.">
+                                    <button type="submit"><i class="ico i-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                        <h5 class="search-result">검색결과 <span>22</span>건</h5>
+                        <ul class="search-result-list">
+                            <li>골든 리트리버</li>
+                            <li>골든 리트리버</li>
+                            <li>골든 리트리버</li>
+                            <li>골든 리트리버</li>
+                            <li>골든 리트리버</li>
+                            <li>골든 리트리버</li>
+                            <li>골든 리트리버</li>
+                            <li>골든 리트리버</li>
+                            <li>골든 리트리버</li>
+                            <li>골든 리트리버</li>
+                            <li>골든 리트리버</li>
+                            <li>골든 리트리버</li> 
+                            <li>골든 리트리버</li>
+                            <li>골든 리트리버</li>
+                            <li>골든 리트리버</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : kindModal -->
+
+    <!-- START : Script -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- END : Script -->
+</body>
+
+</html>

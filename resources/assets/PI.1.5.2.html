@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Pet PASS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- START : Header -->
+        <header class="header">
+            <div class="container">
+                <a href="#">
+                    <i class="ico i-back"></i>
+                </a>
+                <h3>반려동물 동반출입장소</h3>
+            </div>
+        </header>
+        <!-- END : Header -->
+
+        <!-- START : Content -->
+        <main>
+            <section>
+                <div class="item-detail-wrap">
+                    <div class="item-img-wrap">
+                        <div class="swiper item-img-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="background: url(img/sample-01.png);"></div>
+                                <div class="swiper-slide" style="background: url(img/sample-01.png);"></div>
+                                <div class="swiper-slide" style="background: url(img/sample-01.png);"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="item-detail">
+                        <div class="item-detail-header">
+                            <h3>화성시 반려가족 놀이터</h3>
+                        </div>
+                        <div class="item-detail-info">
+                            <div class="item-detail-info-area">
+                                <h5>기본정보</h5>
+                                <dl>
+                                    <dt>주소</dt>
+                                    <dd>경기 화성시 서신면 백미리 266-16</dd>
+                                </dl>
+                            </div>
+                            <div class="item-detail-info-area">
+                                <h5>소게</h5>
+                                <p>텍스트를 입력해주세요. 텍스트를 입력해주세요. 텍스트를 입력해주세요. 텍스트를 입력해주세요. 텍스트를 입력해주세요. 텍스트를 입력해주세요. 텍스트를 입력해주세요. 텍스트를 입력해주세요. 텍스트를 입력해주세요. 텍스트를 입력해주세요. 텍스트를 입력해주세요. 텍스트를 입력해주세요. 텍스트를 입력해주세요. 텍스트를 입력해주세요. 텍스트를 입력해주세요.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- END : Content -->
+
+    </div>
+
+
+
+    <!-- START : petModal -->
+    <div id="petModal" class="modal-wrap toggle-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>반려동물 정보 관리</h2>
+                </div>
+                <div class="modal-body">
+                    <ul class="profile-item">
+                        <li><a href="#">대표 신분증으로 설정</a></li>
+                        <li><a href="#">반려동물 정보 수정</a></li>
+                        <li><a href="#">반려동물 삭제</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : petModal -->
+
+
+
+
+    <!-- START : Script -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".item-img-swiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <script src="js/common.js"></script>
+    <!-- END : Script -->
+</body>
+
+</html>

@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet PASS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="common-wrap">
+        <header class="header">
+            <h1>공통검포넌트</h1>
+        </header>
+        <section class="common-body">
+            <aside>
+                <ul>
+                    <li>
+                        <a href="#button">BUTTON</a>
+                    </li>
+                    <li>
+                        <a href="#">Modal</a>
+                    </li>
+                    <li>
+                        <a href="#input">Input</a>
+                    </li>
+                    <li>
+                        <a href="#">Tab</a>
+                    </li>
+                    <li>
+                        <a href="#table">Table</a>
+                    </li>
+                    <li>
+                        <a href="#pagination">Pagination</a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="common-element">
+                <table id="button">
+                    <tbody>
+                        <tr>
+                            <td>BUTTON</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-r btn-mn btn-blue">BUTTON</button>
+                                    <button type="button" class="btn btn-sm btn-blue">BUTTON</button>
+                                    <button type="button" class="btn btn-sm btn-outline-gray">BUTTON</button>
+                                    <button type="button" class="btn btn-md btn-gray">BUTTON</button>
+                                    <button type="button" class="btn btn-md btn-gray" disabled>BUTTON</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+
+                    <tbody>
+                        <tr>
+                            <td>MODAL</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-primary open-modal"
+                                        data-modal-id="alertModal">alertModal</button>
+                                    <button type="button" class="btn btn-sm btn-primary open-modal"
+                                        data-modal-id="contentModal">contentModal</button>
+                                    <button type="button" class="btn btn-sm btn-primary open-modal"
+                                        data-modal-id="confirmModal">confirmModal</button>
+                                    <button type="button" class="btn btn-sm btn-primary open-modal"
+                                        data-modal-id="completeModal">completeModal</button>
+                                    <button type="button" class="btn btn-sm btn-primary open-modal"
+                                        data-modal-id="popupModal">popupModal</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="input">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td colspan="5">Input(text)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-wrap">
+                                    <div class="input-group">
+                                        <label for="">Label<span>*</span></label>
+                                        <input type="text" id="text02" placeholder="Placeholder">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-wrap">
+                                    <div class="input-group error">
+                                        <label for="">Label</label>
+                                        <input type="text" id="text02" placeholder="Placeholder">
+                                        <small>에러메세지를 입력해주세요.</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-group">
+                                    <label for="">품종<span>*</span></label>
+                                    <div class="input-search">
+                                        <input type="text" id="text02" placeholder="품종을 선택해주세요." disabled>
+                                        <button type="button" class="open-modal" data-modal-id="kindModal"><i
+                                                class="ico i-search"></i></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Input(Checkbox)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk">
+                                        <label for="chk">기본</label>
+                                    </div>
+                                    <div class="check-group blue-circle">
+                                        <input type="checkbox" id="chk01">
+                                        <label for="chk01">기본</label>
+                                    </div>
+                                    <div class="check-group red">
+                                        <input type="checkbox" id="chk02">
+                                        <label for="chk02">기본</label>
+                                    </div>
+                                    <div class="check-group red-circle">
+                                        <input type="checkbox" id="chk03">
+                                        <label for="chk03">기본</label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Input(Radio)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="radio-wrap">
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio01">
+                                        <label for="radio01">기본</label>
+                                    </div>
+                                    <div class="radio-group red">
+                                        <input type="radio" id="radio02">
+                                        <label for="radio02">기본</label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="radio-group outline">
+                                    <h4>성별<span>*</span></h4>
+                                    <div class="radio-area">
+                                        <input type="radio" id="boy" name="gender">
+                                        <label for="boy">남자아이</label>
+                                        <input type="radio" id="lady" name="gender">
+                                        <label for="lady">여자아이</label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Input(Number)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="number-group">
+                                    <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                                    <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                                    <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                                    <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                                    <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                                    <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>Input(datepicker)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="date-group">
+                                    <label for="">Label<span>*</span></label>
+                                    <div class="date-area">
+                                        <input type="date" placeholder="날짜를 선택하세요." required>
+                                        <i class="ico i-calendar"></i>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date-group error">
+                                    <label for="">Label<span>*</span></label>
+                                    <div class="date-area">
+                                        <input type="date" placeholder="날짜를 선택하세요." required>
+                                        <i class="ico i-calendar"></i>
+                                    </div>
+                                    <small>에러메세지를 입력해주세요.</small>
+                                </div>
+                            </td>
+                            <td></td>
+                            <!-- <td>
+                                <div class="date-group">
+                                    <div class="date-wrap">
+                                        <input type="date" placeholder="시작일">
+                                        <span>-</span>
+                                        <input type="date" placeholder="시작일">
+                                    </div>
+                                </div>
+                            </td> -->
+                        </tr>
+
+                    </tbody>
+                </table>
+                <table>
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>input(textarea)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="text-group sm">
+                                    <label for="">Textarea(SM)</label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="텍스트를 입력해주세요"></textarea>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-group md">
+                                    <label for="">Textarea(MD)</label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="텍스트를 입력해주세요"></textarea>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-group error">
+                                    <label for="">Textarea(Default)</label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="텍스트를 입력해주세요"></textarea>
+                                    <p>에러문구입니다.</p>
+                                </div>
+                            </td>
+                            <td></td>
+
+
+                    </tbody>
+                </table>
+                <table>
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>input(file)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="file-img-group">
+                                    <input type="file" id="fileImgUpload" accept="image/*">
+                                    <button type="button"><i class="ico i-camera"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="file-group">
+                                    <h2>첨부파일</h2>
+                                    <label for="fileupload"><span>파일 추가</span> 또는 파일을 여기로 드래그</label>
+                                    <input type="file" id="fileupload" />
+                                </div>
+                            </td>
+                            <td></td>
+
+                            <!-- <tr>
+                            <td class="pt-4">
+                                <div class="file-group">
+                                    <h2>첨부파일</h2>
+                                    <label for="fileupload"><span>파일 추가</span> 또는 파일을 여기로 드래그</label>
+                                    <input type="file" id="fileupload" />
+                                </div>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <table>
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>dropdown(selectbox)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="select-group sm">
+                                    <h6>SM</h6>
+                                    <select name="" id="">
+                                        <option value="한국어" selected="selected">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                    </select>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="select-group error">
+                                    <h6>Defalut</h6>
+                                    <select name="" id="">
+                                        <option value="한국어" selected="selected">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                    </select>
+                                    <p>에러문구입니다.</p>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="select-group type2">
+                                    <h6>Label</h6>
+                                    <select name="" id="">
+                                        <option value="한국어" selected="selected">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="dropdown-group">
+                                    <h2>dropdown</h2>
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop01">
+                                            <span class="placeholder">Select an option</span>
+                                        </button>
+                                        <ul id="drop01" class="dropdown-list">
+                                            <li>옵션 1</li>
+                                            <li>옵션 2</li>
+                                            <li>옵션 3</li>
+                                            <li>옵션 4</li>
+                                            <li>옵션 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropdown-group">
+                                    <h2>dropdown</h2>
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button disabled" data-target="drop01">
+                                            <span class="placeholder">Select an option</span>
+                                        </button>
+                                        <ul id="drop01" class="dropdown-list">
+                                            <li>옵션 1</li>
+                                            <li>옵션 2</li>
+                                            <li>옵션 3</li>
+                                            <li>옵션 4</li>
+                                            <li>옵션 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropdown-group md">
+                                    <h2>dropdown(md)</h2>
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop03">
+                                            <span class="placeholder">Select an option</span>
+                                        </button>
+                                        <ul id="drop03" class="dropdown-list">
+                                            <li>옵션 1</li>
+                                            <li>옵션 2</li>
+                                            <li>옵션 3</li>
+                                            <li>옵션 4</li>
+                                            <li>옵션 5</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>searchbox</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-search">
+                                    <input type="text" placeholder="어떤 전문가를 찾으시나요?">
+                                    <button type="submit">
+                                        <i class="ico i-search-p"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-search type2">
+                                    <input type="text" placeholder="Placeholder">
+                                    <button type="submit">
+                                        <i class="ico i-search"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-search md">
+                                    <input type="text" placeholder="Placeholder">
+                                    <button type="button">
+                                        <i class="ico i-search-b"></i>
+                                    </button>
+                                    <i class="ico i-clear"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>card</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ss-card-wrap">
+                                    <div class="ss-card">
+                                        <div class="ss-card-header">
+                                            <h3>유의사항</h3>
+                                        </div>
+                                        <div class="ss-card-body">
+                                            <p>구매하신 상품은 결제 완료 후 링크 정보가 발급됩니다.<br>해당 영역에서는 사용안내 정보를 표시합니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>page depth</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="depth-group">
+                                    <ul>
+                                        <li><a href="#"><i class="ico i-home"></i></a></li>
+                                        <li>/</li>
+                                        <li><a href="#">디자인</a></li>
+                                        <li>/</li>
+                                        <li><a href="#">로고디자인</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="pagination">
+                    <tbody>
+                        <tr>
+                            <td>pagination</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="pagination">
+                                    <ul>
+                                        <li class="prev"><a href=""><i class="ico i-page-prev"></i></a></li>
+                                        <li class="active"><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li><a href="">6</a></li>
+                                        <li><a href="">7</a></li>
+                                        <li><a href="">8</a></li>
+                                        <li><a href="">9</a></li>
+                                        <li><a href="">10</a></li>
+                                        <li class="next"><a href=""><i class="ico i-page-next"></i></a></li>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="product">
+                    <tbody>
+                        <tr>
+                            <td>product</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product-wrap">
+                                    <button class="btn-heart"></button>
+                                    <div class="swiper-wrap product-img">
+                                        <div class="swiper product-img-swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-top">
+                                            <a href="#" class="user off">
+                                                <img src="img/sample/sample-02.png" alt="">Shane
+                                                A</a>
+                                            <span class="user-level">TOP</span>
+                                        </div>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
+                                            고급스러운 홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star-active"></i>4.8
+                                            <span>(268)</span>
+                                        </p>
+                                        <h6 class="product-price">4,000 원~</h6>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-wrap">
+                                    <button class="btn-heart"></button>
+                                    <div class="swiper-wrap product-img">
+                                        <div class="swiper product-img-swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-05.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-top">
+                                            <a href="#" class="user off">
+                                                <!-- <div class="user-photo" style="background: url(img/sample/sample-02.png);">H</div> -->
+                                                <!-- comment : 공통 header 프로필도 img 태그로 되어 있어서 img 태그 주석처리 후 <div class="user-photo">A</div> 해당 태그 넣어주시면 텍스트와 함께 출력됩니다. -->
+                                                <div class="user-photo">A</div>ShaneA
+                                            </a>
+                                            <span class="user-level">TOP</span>
+                                        </div>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
+                                            고급스러운 홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star-active"></i>4.8
+                                            <span>(268)</span>
+                                        </p>
+                                        <h6 class="product-price">4,000 원~</h6>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product-info">
+                                    <div class="info-top">
+                                        <a href="#" class="user off"><img src="img/sample/sample-02.png" alt="">Shane
+                                            A</a>
+                                        <span class="user-level">TOP</span>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="info-top">
+                                        <a href="#" class="user md on"><img src="img/sample/sample-02.png" alt="">Shane
+                                            A</a>
+                                        <span class="user-level"><i class="ico i-top"></i>TOP</span>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="info-top">
+                                        <a href="#" class="user on"><img src="img/sample/sample-02.png" alt="">Shane
+                                            A</a>
+                                        <span class="user-level"><i class="ico i-pro"></i>PRO</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="tab">
+                    <tbody>
+                        <tr>
+                            <td>tab</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="custom-tabs" id="custom-tabs">
+                                    <div class="custom-tab">Tab 1</div>
+                                    <div class="custom-tab">Tab 2</div>
+                                    <div class="custom-tab">Tab 3</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pt-4">
+                                <div class="tabs">
+                                    <ul class="tab-list">
+                                        <li class="tab-button active" data-target="viewProduct">작성 가능한 리뷰 (12)</li>
+                                        <li class="tab-button" data-target="cartList">내가 작성한 리뷰 (3)</li>
+                                        <li class="tab-button" data-target="cartList">내가 작성한 리뷰 (3)</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="accordion">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4>Accordion</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header">Section 1</h6>
+                                    <div class="accordion-content">
+                                        <p>Content for Section 1</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="progress">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4>Progress</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product-detail-review-rating">
+                                    <progress id="file" value="32" max="100"></progress>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="progress-group">
+                                    <progress id="file" value="32" max="100"></progress>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="circle success">
+                                    <div class="inner-circle">
+                                        <span>40%</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="circle info">
+                                    <div class="inner-circle">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="circle warning">
+                                    <div class="inner-circle">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+                <table id="toggle">
+                    <colgroup>
+                        <col style="width: 10%;">
+                        <col style="width: 10%;">
+                        <col style="width: auto">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4>Toggle</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="toggle-group">
+                                    <label class="toggle">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="toggle-group type2">
+                                    <label class="toggle">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="etc">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4>ETC</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-etc">
+                                    <button type="button" class="btn-pink-heart"><i
+                                            class="ico i-heart-pink"></i>109</button>
+                                    <button type="button" class="btn-heart"><i class="ico i-heart-blue"></i></button>
+                                    <button type="button" class="btn-share open-modal" data-modal-id="shareModal"><i
+                                            class="ico i-share-blue"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="expert-profile">
+                                    <div class="expert-profile-img-area">
+                                        <div class="expert-profile-img"
+                                            style="background: url(img/sample/sample-02.png); background-size: cover;">
+                                        </div>
+                                        <div class="expert-rating new">NEW</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="expert-profile">
+                                    <div class="expert-profile-img-area">
+                                        <div class="expert-profile-img"
+                                            style="background: url(img/sample/sample-02.png); background-size: cover;">
+                                        </div>
+                                        <div class="expert-rating one">Level<br>one</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="expert-profile">
+                                    <div class="expert-profile-img-area">
+                                        <div class="expert-profile-img"
+                                            style="background: url(img/sample/sample-02.png); background-size: cover;">
+                                        </div>
+                                        <div class="expert-rating two">Level<br>two</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="expert-profile">
+                                    <div class="expert-profile-img-area">
+                                        <div class="expert-profile-img"
+                                            style="background: url(img/sample/sample-02.png); background-size: cover;">
+                                        </div>
+                                        <div class="expert-rating top">TOP</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <div class="rating-group">
+                                <span class="star" data-rating="1"></span>
+                                <span class="star" data-rating="2"></span>
+                                <span class="star" data-rating="3"></span>
+                                <span class="star" data-rating="4"></span>
+                                <span class="star" data-rating="5"></span>
+                            </div>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+        </section>
+    </div>
+
+
+    <!-- S : alertModal -->
+    <div id="alertModal" class="gt-modal-wrap alert-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-mini">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close-g"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <h6>알림 전체 삭제</h6>
+                    <p>알림을 전체 삭제하시겠습니까?<br>
+                        삭제후에는 복구되지 않습니다.</p>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-sm btn-primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : alertModal -->
+
+    <!-- S: contentModal -->
+    <div id="contentModal" class="gt-modal-wrap content-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-sm">
+                <div class="gt-modal-header">
+                    <h3 class="gt-modal-title">비밀번호 재설정</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <p>저장하시겠습니까?</p>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-sm btn-primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E: contentModal -->
+
+    <!-- S: confirmModal -->
+    <div id="confirmModal" class="gt-modal-wrap confirm-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-md">
+                <div class="gt-modal-header">
+                    <h3 class="gt-modal-title">비밀번호 재설정</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <p>저장하시겠습니까?</p>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-sm btn-primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E: confirmModal -->
+
+    <!-- S : completeModal :: 제출완료 -->
+    <div id="completeModal" class="gt-modal-wrap complete-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+
+                <div class="gt-modal-body">
+                    <img class="ico-complete" src="img/ico/i-complete-check.png" alt="">
+                    <h1>제출완료</h1>
+                    <p>작성하신 1:1문의가 제출이 완료되었습니다.<br>
+                        담당자가 확인후 빠른시간내에 답변드리도록 하겠습니다.</p>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-primary btn-modal-close">확인</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : CompleteModal -->
+
+    <!-- S : popupModal :: 팝업모달 -->
+    <div id="popupModal" class="gt-modal-wrap complete-modal popup-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <img src="img/sample/sample-04.png" alt="">
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="check-group type2 sm">
+                        <input type="checkbox" id="check01">
+                        <label for="check01">오늘 하루 보지않기</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : popupModal -->
+
+
+
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

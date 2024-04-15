@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Pet PASS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- START : Header -->
+        <header class="header">
+            <div class="container">
+                <a href="#">
+                    <i class="ico i-back"></i>
+                </a>
+                <h3>신청자 정보 입력</h3>
+            </div>
+            <progress id="file" max="100" value="70">70%</progress>
+        </header>
+        <!-- END : Header -->
+
+        <!-- START : Content -->
+        <main>
+            <form action="">
+                <section class="container">
+                    <div class="info-input">
+                        <h2>신청자 정보</h2>
+                        <div class="input-wrap">
+                            <div class="input-group">
+                                <label for="">이름<span>*</span></label>
+                                <input type="text" id="text02" value="홍길동" disabled>
+                            </div>
+                            <div class="input-group">
+                                <label for="">휴대폰 번호<span>*</span></label>
+                                <input type="text" id="text02" value="010-0000-0000" disabled>
+                            </div>
+                             <div class="input-group">
+                                <label for="">주민등록번호<span>*</span></label>
+                                <div class="input-area">
+                                    <input type="text" id="text02" value="831203" disabled>
+                                    <span>-</span>
+                                    <input type="text" id="text02" placeholder="주민등록번호 뒷자리">
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="">현 거주지 주소<span>*</span></label>
+                                <div class="input-search">
+                                    <input type="text" id="text02" placeholder="현 거주지 주소">
+                                    <button type="button"><i class="ico i-search"></i></button>
+                                </div>
+                                <input type="text" id="text02" placeholder="상세주소">
+                            </div>
+                            <div class="input-group">
+                                <label for="">주민등록상 주소<span>*</span></label>
+                                <div class="input-search">
+                                    <input type="text" id="text02" placeholder="주민등록상 주소">
+                                    <button type="button"><i class="ico i-search"></i></button>
+                                </div>
+                                <input type="text" id="text02" placeholder="상세주소">
+                                <div class="check-group blue-circle">
+                                    <input type="checkbox" id="chk01">
+                                    <label for="chk01">현 거주지 주소와 동일해요.</label>
+                                </div>
+                            </div>
+                            <div class="es-group">
+                                <h5>전자서명<span>*</span></h5>
+                                <div class="es-box">
+                                    <h5>서명을 해주세요.</h5>
+                                </div>
+                                <!-- <small>서명을 해주세요</small> -->
+                                <button class="btn btn-md btn-outline-darkgray open-modal" data-modal-id="esModal">전자서명하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="btn-group bottom">
+                    <button type="button" class="btn btn-blue btn-md">다음</button>
+                </div>
+            </form>
+        </main>
+        <!-- END : Content -->
+    </div>
+
+    <!-- START : esModal -->
+    <div id="esModal" class="modal-wrap es-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>전자서명</h1>
+                    <button type="button" class="btn-modal-close"><i class="ico i-x"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="es-box">
+                        <button type="button" class="btn-refresh"><i class="ico i-arrow-clockwise"></i></button>
+                        <h5>서명을 해주세요.</h5>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-md btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-md btn-blue">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : esModal -->
+
+    <!-- START : Script -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- END : Script -->
+</body>
+
+</html>

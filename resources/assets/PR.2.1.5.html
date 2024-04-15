@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Pet PASS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- START : Header -->
+        <header class="header">
+            <div class="container">
+                <a href="#">
+                    <i class="ico i-back"></i>
+                </a>
+                <h3>국가동물등록 신청현황</h3>
+            </div>
+        </header>
+        <!-- END : Header -->
+
+        <!-- START : Content -->
+        <main>
+            <section class="container">
+                <div class="order-wrap cs-wrap">
+                    <div class="card b-0">
+                        <div class="card-header">
+                            <h3>신청현황</h3>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <p>배송중<span class="btn btn-r btn-mn gray open-modal"
+                                        data-modal-id="deliveryTrackingModal">배송조회</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+        <!-- END : Content -->
+
+    </div>
+
+
+    <!-- START : deliveryTrackingModal -->
+    <div id="deliveryTrackingModal" class="modal-wrap toggle-modal active">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>배송조회</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="delivery-track">
+                            <div class="card">
+                                <dl>
+                                    <dt>택배사</dt>
+                                    <dd>롯데택배</dd>
+                                </dl>
+                                <dl>
+                                    <dt>송장번호</dt>
+                                    <dd><a href="#">12312312312312</a></dd>
+                                </dl>
+                            </div>
+                            <div class="card">
+                                <div class="product">
+                                    <div class="product-img"></div>
+                                    <div class="product-text">
+                                        <h5>아트비코팅 메탈프리 22(노랑)</h5>
+                                        <p><span class="price-after">9,900</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-group last">
+                        <button type="submit" class="btn btn-md btn-blue btn-modal-close">확인</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : deliveryTrackingModal -->
+
+
+
+
+
+    <!-- START : Script -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- END : Script -->
+</body>
+
+</html>

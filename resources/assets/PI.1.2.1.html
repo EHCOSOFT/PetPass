@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Pet PASS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- START : Header -->
+        <header class="header">
+            <div class="container">
+                <a href="#">
+                    <i class="ico i-back"></i>
+                </a>
+                <h3>반려동물 신분증 관리</h3>
+            </div>
+        </header>
+        <!-- END : Header -->
+
+        <!-- START : Content -->
+        <main>
+            <section class="ad-wrap">
+                <div class="container">
+                    <!-- 광고 슬라이드 영역-->
+                </div>
+            </section>
+
+            <section class="container">
+                <div class="pet-list-wrap">
+                    <div class="card">
+                        <div class="pet">
+                            <div class="pet-img cat"></div>
+                            <div class="pet-info">
+                                <div class="pet-header">
+                                    <h3>김포유<i class="ico i-boy"></i></h3>
+                                    <div class="btn-group">
+                                        <span class="gray btn btn-r btn-mn">대표</span>
+                                        <button type="button" class="open-modal btn-pet" data-modal-id="petModal"><i
+                                                class="ico i-three"></i></button>
+                                    </div>
+                                </div>
+                                <div class="pet-detail">
+                                    <h6>코리안쇼트헤어</h6>
+                                    <ul>
+                                        <li>23456789012345</li>
+                                        <li>중성화완료</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pet-detail-info">
+                            <dl>
+                                <dt>털색</dt>
+                                <dd>크림색</dd>
+                            </dl>
+                            <dl>
+                                <dt>성별</dt>
+                                <dd>남자아이</dd>
+                            </dl>
+                            <dl>
+                                <dt>중성화</dt>
+                                <dd>완료</dd>
+                            </dl>
+                            <dl>
+                                <dt>생년월일</dt>
+                                <dd>2023. 08. 01</dd>
+                            </dl>
+                            <dl>
+                                <dt>입양일</dt>
+                                <dd>2023. 08. 01</dd>
+                            </dl>
+                            <dl>
+                                <dt>몸무게</dt>
+                                <dd>8.82Kg</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pet">
+                            <div class="pet-img cat"></div>
+                            <div class="pet-info">
+                                <div class="pet-header">
+                                    <h3>김포유<i class="ico i-boy"></i></h3>
+                                    <div class="btn-group">
+                                        <button type="button" class="open-modal btn-pet" data-modal-id="petModal"><i
+                                                class="ico i-three"></i></button>
+                                    </div>
+                                </div>
+                                <div class="pet-detail">
+                                    <h6>코리안쇼트헤어</h6>
+                                    <ul>
+                                        <li>23456789012345</li>
+                                        <li>중성화완료</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pet">
+                            <div class="pet-img puppy"></div>
+                            <div class="pet-info">
+                                <div class="pet-header">
+                                    <h3>김포유<i class="ico i-lady"></i></h3>
+                                    <div class="btn-group">
+                                        <button type="button" class="open-modal btn-pet" data-modal-id="petModal"><i
+                                                class="ico i-three"></i></button>
+                                    </div>
+                                </div>
+                                <div class="pet-detail">
+                                    <h6>코리안쇼트헤어</h6>
+                                    <ul>
+                                        <li>23456789012345</li>
+                                        <li>중성화완료</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-gray w-100 btn-md">우리아이 등록하기</button>
+                </div>
+            </section>
+        </main>
+        <!-- END : Content -->
+
+    </div>
+
+
+
+    <!-- START : petModal -->
+    <div id="petModal" class="modal-wrap toggle-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>반려동물 정보 관리</h2>
+                </div>
+                <div class="modal-body">
+                    <ul class="profile-item">
+                        <li><a href="#">대표 신분증으로 설정</a></li>
+                        <li><a href="#">반려동물 정보 수정</a></li>
+                        <li><a href="#">반려동물 삭제</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : petModal -->
+
+
+
+
+    <!-- START : Script -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- END : Script -->
+</body>
+
+</html>

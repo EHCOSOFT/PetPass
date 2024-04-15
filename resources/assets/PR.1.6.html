@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Pet PASS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- START : Header -->
+        <header class="header">
+            <div class="container">
+                <a href="#">
+                    <i class="ico i-back"></i>
+                </a>
+                <h3>외장칩 결제</h3>
+            </div>
+            <progress id="file" max="100" value="70">70%</progress>
+        </header>
+        <!-- END : Header -->
+
+        <!-- START : Content -->
+        <main>
+            <section class="container">
+                <div class="order-wrap">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>외장칩 정보</h3>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-r btn-mn btn-outline-gray open-modal"
+                                    data-modal-id="productChangeModal">변경</button>
+                                <button type="button" class="btn btn-r btn-mn btn-gray open-modal"
+                                    data-modal-id="productDetailModal">제품정보</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="product">
+                                <div class="product-img"></div>
+                                <div class="product-text">
+                                    <h5>아트비코팅 메탈프리 22(노랑)</h5>
+                                    <p><span class="price-before">15,000</span>→<span class="price-after">9,900</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>배송 정보</h3>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-r btn-mn btn-outline-gray open-modal"
+                                    data-modal-id="">변경</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="info">
+                                <h5>홍길동(010-****-1234)</h5>
+                                <h6>서울영등포구여의대로24 (여의도동, 전경련회 관)<br>
+                                    1231241231231231231231231231</h6>
+                                <div class="input-group select-group open-modal" data-modal-id="deliveryRequestModal">
+                                    <input type="text" placeholder="배송요청사항을 선택해주세요.">
+                                    <i class="ico i-arrow-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>신청자 정보</h3>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-r btn-mn btn-outline-gray">변경</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="info">
+                                <h5>홍길동(010-****-1234)</h5>
+                                <h6>010-****-1234</h6>
+                                <button type="button" class="btn-info-detail"><i class="ico i-circle-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-footer none">
+                            <dl>
+                                <dt>실 거주지 주소</dt>
+                                <dd>(28456)<br>
+                                    충북 청주시 흥덕구 1순환로 384(신봉동)<br>
+                                    상세주소</dd>
+                            </dl>
+                            <dl>
+                                <dt>주민등록상 주소</dt>
+                                <dd>(28456)<br>
+                                    충북 청주시 흥덕구 1순환로 384(신봉동)<br>
+                                    상세주소</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>반려동물 정보</h3>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-r btn-mn btn-outline-gray">변경</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="info">
+                                <h5>김포유</h5>
+                                <h6>코리아쇼트헤어</h6>
+                                <button type="button" class="btn-info-detail"><i class="ico i-circle-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-footer none">
+                            <dl>
+                                <dt>털색</dt>
+                                <dd>흰색</dd>
+                            </dl>
+                            <dl>
+                                <dt>성별</dt>
+                                <dd>남자아이</dd>
+                            </dl>
+                            <dl>
+                                <dt>중성화</dt>
+                                <dd>완료</dd>
+                            </dl>
+                            <dl>
+                                <dt>생년월일</dt>
+                                <dd>2023.08.01</dd>
+                            </dl>
+                            <dl>
+                                <dt>입양일</dt>
+                                <dd>2023.08.01</dd>
+                            </dl>
+                            <dl>
+                                <dt>체형</dt>
+                                <dd>뚱뚱해요</dd>
+                            </dl>
+                            <dl>
+                                <dt>몸무게</dt>
+                                <dd>8.88kg</dd>
+                            </dl>
+                            <dl>
+                                <dt>특이사항</dt>
+                                <dd>-</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>결제수단</h3>
+                        </div>
+                        <div class="card-footer b-0">
+                            <div class="radio-group">
+                                <input type="radio" name="payment" id="radio11">
+                                <label for="radio11">신용/체크카드</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" name="payment" id="radio12">
+                                <label for="radio12">KB Walet 포인트</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>최종 결제금액</h3>
+                            <h3 class="price">12,400원</h3>
+                        </div>
+                        <div class="card-footer b-0">
+                            <dl>
+                                <dt>상품가격</dt>
+                                <dd>9,900원</dd>
+                            </dl>
+                            <dl>
+                                <dt>배송비</dt>
+                                <dd>2,500원</dd>
+                            </dl>
+                            <h6 class="delivery-info">* 묶음 배송이 적용되어 배송비는 한번만 부과됩니다.(최대 2개)</h6>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="btn-group bottom">
+                <button type="button" class="btn btn-blue btn-md open-modal"
+                    data-modal-id="orderCheckModal">결제하기</button>
+            </div>
+        </main>
+        <!-- END : Content -->
+    </div>
+
+    <!-- START : productDetailModal -->
+    <div id="productDetailModal" class="modal-wrap es-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>제품정보</h1>
+                    <button type="button" class="btn-modal-close"><i class="ico i-x"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-detail-wrap">
+                        <div class="product-detail-area">
+                            <h5>주의사항</h5>
+                            <div class="product-detail-info">
+                                <div class="product-detail-img"></div>
+                                <div class="product-detail-text">
+                                    <h5>닥터클루니 외장형 메탈프리</h5>
+                                    <ol>
+                                        <li>제품에 열을 가하지 마십시오.</li>
+                                        <li>개가 삼키지 않게 유의 하십시오.</li>
+                                        <li>제품에 전자칩이 들어있습니다.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-detail-area">
+                            <h5>제품사양</h5>
+                            <div class="product-spec-info">
+                                <dl>
+                                    <dt>제품 재질</dt>
+                                    <dd>아연/합금</dd>
+                                </dl>
+                                <dl>
+                                    <dt>원산지</dt>
+                                    <dd>중국</dd>
+                                </dl>
+                                <dl>
+                                    <dt>제품 재질</dt>
+                                    <dd>FDX-BISO 11784/5</dd>
+                                </dl>
+                                <dl>
+                                    <dt>제품 크기</dt>
+                                    <dd>가로 22mm / 높이 24mm / 두께 2.5mm</dd>
+                                </dl>
+                                <dl>
+                                    <dt>사용방법</dt>
+                                    <dd>후면에 보호자 이름과 전화번호를 기입하고<br>
+                                        투명 스티커를 부착하여 사용하십시오.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-md btn-blue">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : productDetailModal -->
+
+    <!-- START : productChangeModal -->
+    <div id="productChangeModal" class="modal-wrap toggle-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="">
+                        <div class="product-change">
+                            <div class="radio-group">
+                                <input type="radio" id="radio01" name="productChange">
+                                <label for="radio01">
+                                    <div class="product">
+                                        <div class="product-img"></div>
+                                        <div class="product-text">
+                                            <h5>아트비코팅 메탈프리 22(노랑)</h5>
+                                            <p><span class="price-before">15,000</span>→<span
+                                                    class="price-after">9,900</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="radio02" name="productChange">
+                                <label for="radio02">
+                                    <div class="product">
+                                        <div class="product-img"></div>
+                                        <div class="product-text">
+                                            <h5>아트비코팅 메탈프리 22(노랑)</h5>
+                                            <p><span class="price-before">15,000</span>→<span
+                                                    class="price-after">9,900</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="btn-group last">
+                            <button type="submit" class="btn btn-md btn-outline-gray btn-modal-close">취소</button>
+                            <button type="submit" class="btn btn-md btn-blue">변경</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : productChangeModal -->
+
+    <!-- START : deliveryRequestModal -->
+    <div id="deliveryRequestModal" class="modal-wrap toggle-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="">
+                        <div class="delivery-wrap">
+                            <ul class="delivery-req">
+                                <li>
+                                    <div class="radio-group">
+                                        <input type="radio" id="delivery01" name="delivery">
+                                        <label for="delivery01">직접 수령하겠습니다.</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-group">
+                                        <input type="radio" id="delivery02" name="delivery">
+                                        <label for="delivery02">배송 전 연락바랍니다.</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-group">
+                                        <input type="radio" id="delivery03" name="delivery">
+                                        <label for="delivery03">부재 시 경비실에 맡겨주세요.</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-group">
+                                        <input type="radio" id="delivery04" name="delivery">
+                                        <label for="delivery04">부재 시 문 앞에 놓아주세요.</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-group">
+                                        <input type="radio" id="delivery05" name="delivery">
+                                        <label for="delivery05">부재 시 택배함에 넣어주세요.</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio-group">
+                                        <input type="radio" id="deliveryDirect" class="delivery-direct" name="delivery">
+                                        <label for="deliveryDirect">직접입력</label>
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" placeholder="직접입력">
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn-group last">
+                                <button type="button" class="btn btn-md btn-outline-gray btn-modal-close">취소</button>
+                                <button type="submit" class="btn btn-md btn-blue">확인</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : deliveryRequestModal -->
+
+    <!-- START : orderCheckModal -->
+    <div id="orderCheckModal" class="modal-wrap toggle-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header vertical">
+                    <h1>주문확인</h1>
+                    <h5>주문정보를 확인해주세요.</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="order-wrap">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>배송 정보</h3>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="info">
+                                        <h5>홍길동(010-****-1234)</h5>
+                                        <h6>서울영등포구여의대로24 (여의도동, 전경련회 관)<br>
+                                            1231241231231231231231231231</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>결제금액</h3>
+                                </div>
+                                <div class="card-footer b-0">
+                                    <dl>
+                                        <dt>체크/신용카드</dt>
+                                        <dd class="price">12,400원</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group last">
+                        <button type="button" class="btn btn-md btn-outline-gray">취소</button>
+                        <button type="button" class="btn btn-md btn-blue">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : orderCheckModal -->
+
+    <!-- START : paymentCheckModal -->
+    <div id="paymentCheckModal" class="modal-wrap toggle-modal active">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header vertical">
+                    <h1>결제확인</h1>
+                    <h5>결제를 완료하셨나요?<br>결제확인 버튼을 눌러 계속 진행해주세요.</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="card my-4">
+                            <ul class="card-info">
+                                <li>결제창이 열리지 않을 경우, 브라우저 설정에서 팝업을 허용해주세요.</li>
+                                <li class="red">외장칩에 국가등록번호가 귀속되므로 결제완료 이후 환불 및 반품이 어려울 수 있습니다. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-md btn-blue">결제확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : paymentCheckModal -->
+
+    <!-- START : Script -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- END : Script -->
+</body>
+
+</html>

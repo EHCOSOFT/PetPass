@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Pet PASS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- START : Header -->
+        <header class="header">
+            <div class="container">
+                <a href="#">
+                    <i class="ico i-back"></i>
+                </a>
+                <h3>추가정보 입력</h3>
+            </div>
+        </header>
+        <!-- END : Header -->
+
+        <!-- START : Content -->
+        <main>
+            <form action="">
+                <div class="pet-reg-wrap">
+                    <section class="container">
+                        <div class="input-wrap">
+                            <div class="file-group">
+                                <div class="file-img-area">
+                                    <div class="pet-img cat"></div>
+                                    <input type="file" id="fileInput">
+                                    <button class="btn-upload btn btn-r open-modal" type="button" data-modal-id="profilePhotoModal"><i class="ico i-upload"></i></button>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="">반려동물이름</label>
+                                <input type="text" id="text02" value="포유" disabled>
+                            </div>
+                            <div class="input-group">
+                                <label for="">성별</label>
+                                <input type="text" id="text02" value="남자아이" disabled>
+                            </div>
+                            <div class="input-group">
+                                <label for="">국가등록번호</label>
+                                <input type="text" id="text02" value="12345967895" disabled>
+                            </div>
+                            <div class="input-group">
+                                <label for="">품종</label>
+                                <input type="text" id="text02" value="말티즈" disabled>
+                            </div>
+                            <div class="select-group">
+                                <h4>털색<span>*</span></h4>
+                                <select name="" id="">
+                                    <option value="털색을 선택해주세요.">털색을 선택해주세요.</option>
+                                </select>
+                            </div>
+                            <div class="radio-group red">
+                                <h4>중성화 여부<span>*</span></h4>
+                                <div class="radio-area">
+                                    <input type="radio" id="complete" name="neuter">
+                                    <label for="complete">완료</label>
+                                    <input type="radio" id="incomplete" name="neuter">
+                                    <label for="incomplete">미완료</label>
+                                </div>
+                            </div>
+                            <div class="date-group error">
+                                <label for="">생년월일<span>*</span></label>
+                                <div class="date-area">
+                                    <input type="date" placeholder="생년월일을 입력해주세요." required="">
+                                    <i class="ico i-calendar"></i>
+                                </div>
+                                <small>! 생년월일을 입력해주세요.</small>
+                            </div>
+                            <div class="date-group error">
+                                <label for="">입양일<span>*</span></label>
+                                <div class="date-area">
+                                    <input type="date" placeholder="입양일을 입력해주세요." required="">
+                                    <i class="ico i-calendar"></i>
+                                </div>
+                                <small>! 입양일을 입력해주세요.</small>
+                                <div class="check-group red-circle">
+                                    <input type="checkbox" id="chk01">
+                                    <label for="chk01">생년월일과 동일해요.</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="">몸무게(Kg)</label>
+                                <input type="number" id="text02" placeholder="몸무게를 입력해주세요.(소수점 두자리까지 입력가능)">
+                            </div>
+                        </div>
+
+                    </section>
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-gray btn-md">다음</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <!-- END : Content -->
+
+    </div>
+
+
+    <!-- START : profilePhotoModal -->
+    <div id="profilePhotoModal" class="modal-wrap toggle-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>프로필 사진</h2>
+                </div>
+                <div class="modal-body">
+                    <ul class="profile-item">
+                        <li><a href="#">사진촬영</a></li>
+                        <li><a href="#">앨범에서 사진 선택</a></li>
+                        <li><a href="#">기본 이미지로 변경</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : profilePhotoModal -->
+
+    <!-- START : Script -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- END : Script -->
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Pet PASS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- START : Header -->
+        <header class="header">
+            <div class="container">
+                <a href="#">
+                    <i class="ico i-back"></i>
+                </a>
+                <h3>QR 정보 입력</h3>
+            </div>
+        </header>
+        <!-- END : Header -->
+
+        <!-- START : Content -->
+        <main>
+            <form action="">
+                <div class="pet-reg-wrap">
+                    <section class="container">
+                        <h1>김선우님과 함께하는<br>
+                            반려동물 정보를 입력해주세요.</h1>
+                        <div class="qr-info-wrap">
+                            <div class="qr-info-item">
+                                <h3>보호자 정보</h3>
+                                <div class="card">
+                                    <h5>홍길동(010-****-1234)</h5>
+                                    <div class="select-group error">
+                                        <select name="" id="">
+                                            <option value="털색을 선택해주세요.">동반 입장 인원수를 선택해주세요.(본인포함)</option>
+                                        </select>
+                                        <small>! 동반 인원 수를 선택해주세요.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qr-info-item">
+                                <h3>동반 반려동물 선택</h3>
+                                <p>동반 반려동물을 선택해주세요.</p>
+                                <div class="pet-reg-check qr">
+                                    <div class="check-group red-circle">
+                                        <input type="checkbox" id="chk03">
+                                        <label for="chk03">
+                                            <div class="pet">
+                                                <div class="pet-info">
+                                                    <div class="pet-detail">
+                                                        <h3>김포유</h3>
+                                                        <ul>
+                                                            <li>코리안쇼트헤어</li>
+                                                            <li>123456456</li>
+                                                        </ul>
+                                                        <div class="radio-wrap error">
+                                                            <div class="radio-area">
+                                                                <div class="radio-group">
+                                                                    <input type="radio" id="radio01" name="radio01">
+                                                                    <label for="radio01">대형견</label>
+                                                                </div>
+                                                                <div class="radio-group">
+                                                                    <input type="radio" id="radio02" name="radio01">
+                                                                    <label for="radio02">중형견</label>
+                                                                </div>
+                                                                <div class="radio-group">
+                                                                    <input type="radio" id="radio03" name="radio01">
+                                                                    <label for="radio03">소형견</label>
+                                                                </div>
+                                                            </div>
+                                                            <small>! 반려동물 대/중/소형견 구분을 선택해주세요.</small>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="check-group red-circle">
+                                        <input type="checkbox" id="chk04">
+                                        <label for="chk04">
+                                            <div class="pet">
+                                                <div class="pet-info">
+                                                    <div class="pet-detail">
+                                                        <h3>김포유</h3>
+                                                        <ul>
+                                                            <li>코리안쇼트헤어</li>
+                                                            <li>123456456</li>
+                                                        </ul>
+                                                        <div class="radio-wrap">
+                                                            <div class="radio-area">
+                                                                <div class="radio-group">
+                                                                    <input type="radio" id="radio04" name="radio02">
+                                                                    <label for="radio04">대형</label>
+                                                                </div>
+                                                                <div class="radio-group">
+                                                                    <input type="radio" id="radio05" name="radio02">
+                                                                    <label for="radio05">중형</label>
+                                                                </div>
+                                                                <div class="radio-group">
+                                                                    <input type="radio" id="radio06" name="radio02">
+                                                                    <label for="radio06">소형</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-gray btn-md">출입 QR 발급받기</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <!-- END : Content -->
+
+    </div>
+
+    <!-- START : Script -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- END : Script -->
+</body>
+
+</html>
