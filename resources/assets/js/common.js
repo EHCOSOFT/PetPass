@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    /***
+      * 모달 이벤트
+   ****/
+
     function removeDefaultEvent(e) {
         e.preventDefault();
     }
@@ -38,27 +42,6 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 
-
-    // 탭 메뉴
-    $(".tab-button").click(function () {
-        var target = $(this).data("target");
-
-        $(".tab-button").removeClass("active");
-        $(this).addClass("active");
-
-        $(".tab-content").hide();
-        $("#" + target).show();
-
-        $("html, body").animate(
-            {
-                scrollTop: $("#" + target).offset().top,
-            },
-            500
-        );
-    });
-
-    $("#idFind").show();
-    $("#tab-content-01").show();
 
     /***
        * 하단 이벤트
