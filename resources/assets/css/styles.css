@@ -468,10 +468,23 @@ hr.line {
     gap: 2px;
 }
 
+.pet-header h3 span {
+    background: none;
+    color: var(--pass-black);
+    font-size: 1rem;
+    overflow: hidden;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: calc(100vw - 270px);
+    /* max-width: 100px; */
+}
+
 .pet-header span {
     background: var(--pass-black-02);
     color: var(--pass-write);
     font-size: var(--pass-text-mn);
+    margin: 0 0 0 auto;
 }
 
 .pet-header .btn-group {

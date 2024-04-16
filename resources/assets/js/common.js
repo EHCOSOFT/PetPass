@@ -64,7 +64,7 @@ $(document).ready(function () {
        * 배송요청사항 직접입력 시
     ****/
     $('.delivery-direct').click(function () {
-        $(this).parent().next('.input-group').show(); // 현재 요소의 다음 형제 요소를 보여줍니다.
+        $(this).parent().next('.input-group').show();
     });
 
     /***
@@ -76,8 +76,13 @@ $(document).ready(function () {
     })
 
     /***
-       * 일정
+       * 주문취소 신청 : 직접입력 선택 시
     ****/
-
-
+    $('input[name="order-cancel-reason"]').change(function () {
+        if ($(this).hasClass('cancel-input')) {
+            $('.input-group').removeClass('d-none');
+        } else {
+            $('.input-group').addClass('d-none');
+        }
+    });
 });

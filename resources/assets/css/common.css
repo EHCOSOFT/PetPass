@@ -1044,6 +1044,7 @@ input:disabled {
 /* select */
 .select-group {
     align-items: flex-start;
+    display: flex;
     flex-direction: column;
     gap: 0.25rem;
 }
