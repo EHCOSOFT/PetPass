@@ -967,7 +967,8 @@ input:disabled {
 
 .radio-group.outline input:checked+label {
     border-color: var(--dr-blue);
-    color: var(--dr-blue);
+    background: var(--dr-blue);
+    color: var(--pass-write);
 }
 
 .radio-group.red {
