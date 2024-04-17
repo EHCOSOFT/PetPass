@@ -406,7 +406,7 @@ hr.line {
 .pet-reg-wrap .btn-group {
     background: var(--pass-write);
     bottom: 0;
-    margin: 0;
+    margin: auto 0 0 0;
     padding: 1rem 1.125rem;
     position: sticky;
 }
