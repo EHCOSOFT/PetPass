@@ -1029,6 +1029,14 @@ input:disabled {
     background-size: cover !important;
 }
 
+.radio-group.error input {
+    border: 1px solid var(--pass-red);
+    color: var(--pass-red);
+}
+
+.radio-group.error small {
+    color: var(--pass-red);
+}
 /* number */
 .number-group {
     display: flex;
@@ -2212,19 +2220,20 @@ input:disabled {
     cursor: pointer;
 }
 
-.loading-wrap {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
+#spinner {
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-top-color: white;
+    border-bottom-color: white;
+    border-radius: 100%;
+    animation: spin 1s ease-in-out infinite;
 }
 
-.loading img {
-    height: 100px;
-    width: 100px;
-}
-
-.loading-w {
-    background: none;
-}
+@keyframes spin {
+    100% {
+        transform: rotate(180deg);
+    }
+} 

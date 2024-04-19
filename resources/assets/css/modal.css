@@ -679,3 +679,14 @@
     height: 2.5rem;
     width: 100%;
 }
+
+.loading-modal .modal-inner {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.loading-modal h6 {
+    color: var(--pass-write);
+    font-size: var(--pass-text-md);
+    text-align: center;
+}
