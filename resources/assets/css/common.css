@@ -1036,6 +1036,7 @@ input:disabled {
 .radio-group.error small {
     color: var(--pass-red);
 }
+
 /* number */
 .number-group {
     display: flex;
@@ -1264,23 +1265,29 @@ input:disabled {
     z-index: 0;
 }
 
-.date-group input,
 .date-group input {
+    -webkit-appearance: textfield;
     align-items: center;
     background: var(--pass-write);
     background-position: right 12px center;
     border: 1px solid var(--pass-line);
     border-radius: 0.5rem;
-    color: var(--pass-gray);
+    color: var(--pass-black-01);
     display: flex;
     font-size: var(--pass-text-md);
     font-weight: 400;
     height: 2.75rem;
     justify-content: flex-start;
+    max-width: 100%;
     padding: 0 0.75rem;
     position: relative;
     transition: all .5s;
+    text-align: left;
     width: 100%;
+}
+
+.date-group input::-webkit-date-and-time-value {
+    text-align: left;
 }
 
 .date-group input[type="date"]::-webkit-datetime-edit-text,
@@ -2235,4 +2242,4 @@ input:disabled {
     100% {
         transform: rotate(180deg);
     }
-} 
+}
