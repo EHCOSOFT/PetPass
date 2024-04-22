@@ -625,7 +625,7 @@ button:disabled {
 .input-wrap {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    row-gap: 1rem;
 }
 
 .input-group {
@@ -1264,8 +1264,8 @@ input:disabled {
     z-index: 0;
 }
 
-.date-group input[type="date"],
-.date-group input[type="time"] {
+.date-group input,
+.date-group input {
     align-items: center;
     background: var(--pass-write);
     background-position: right 12px center;
