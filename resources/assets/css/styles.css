@@ -1016,3 +1016,8 @@ hr.line {
 .check-area.pet .check-group input:checked+label {
     border: 1px solid var(--pass-red);
 }
+
+.map-wrap {
+    height: calc(100vh - 83px);
+    width: 100%;
+}
