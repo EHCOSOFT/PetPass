@@ -700,7 +700,6 @@ input:disabled {
 
 .input-group.error input {
     border: 1px solid var(--pass-red);
-    color: var(--pass-red) !important;
 }
 
 .input-group.error small {
