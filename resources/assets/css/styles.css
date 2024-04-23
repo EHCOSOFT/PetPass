@@ -573,6 +573,7 @@ hr.line {
  * **************************************** */
 .ad-wrap {
     background: var(--pass-sub-bg);
+    padding: 1.25rem 0 2rem 0;
 }
 
 .pet-list-wrap {
@@ -739,6 +740,17 @@ hr.line {
     padding: 1.25rem 1.125rem;
 }
 
+.list-item .item.none {
+    align-items: center;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+}
+.list-item .item.none p { 
+    font-size: var(--pass-text-md);
+    text-align: center;
+}
+
 .list-item .item-img {
     border-radius: 0.5rem;
     background-size: cover !important;
@@ -780,6 +792,7 @@ hr.line {
 .item-detail-info dt {
     color: var(--pass-black);
     font-size: var(--pass-text-sm);
+    flex: 0 0 auto;
 }
 
 .item-detail-info dd,
@@ -1018,6 +1031,7 @@ hr.line {
 }
 
 .map-wrap {
-    height: calc(100vh - 83px);
+    height: calc(100vh - 247px);
+    /* height: calc(100vh - 103px); */ /* 광고영역이 없을시 */
     width: 100%;
 }

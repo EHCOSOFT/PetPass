@@ -27,7 +27,31 @@
         <main>
             <section class="ad-wrap">
                 <div class="container">
-                    <!-- 광고 슬라이드 영역-->
+                    <div class="ad-swiper-wrap">
+                        <div class="swiper ad-swiper">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide" style="background: url(img/ad-bg-01.png);">
+                                    <div class="ad-item">
+                                        <h3>펫세권</h3>
+                                        <h6>반려동물과 함께<br>즐거운 추억을 나눠보세요.</h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="swiper-slide" style="background: url(img/ad-bg-01.png);">
+                                    <div class="ad-item">
+                                        <h3>펫세권</h3>
+                                        <h6>반려동물과 함께<br>즐거운 추억을 나눠보세요.</h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="swiper-slide" style="background: url(img/ad-bg-01.png);">
+                                    <div class="ad-item">
+                                        <h3>펫세권</h3>
+                                        <h6>반려동물과 함께<br>즐거운 추억을 나눠보세요.</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination ad-swiper-pagination"></div>
+                    </div>
                 </div>
             </section>
 
@@ -72,6 +96,18 @@
     <!-- START : Script -->
     <script src="lib/jquery.min.js"></script>
     <script src="lib/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".ad-swiper", {
+            spaceBetween: 16,
+            pagination: {
+                el: ".ad-swiper-pagination",
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
     <script src="js/common.js"></script>
     <!-- END : Script -->
 </body>

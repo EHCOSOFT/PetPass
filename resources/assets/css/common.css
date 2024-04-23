@@ -76,6 +76,7 @@ body {
     font-size: var(--pass-body-font-size);
     font-weight: var(--pass-body-font-weight);
     line-height: 1.5;
+    height: var(--app-height);
     margin: 0;
 }
 
@@ -1266,7 +1267,7 @@ input:disabled {
 }
 
 .date-group input {
-    -webkit-appearance: textfield;
+    -webkit-appearance: none; /* safari */
     align-items: center;
     background: var(--pass-write);
     background-position: right 12px center;

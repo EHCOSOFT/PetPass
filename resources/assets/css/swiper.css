@@ -170,5 +170,40 @@
 }
 
 .item-img-swiper .swiper-pagination-bullet-active {
-    width: 16px;
+    width: 1rem;
+}
+
+/* ad-swiper */
+.ad-swiper .swiper-slide {
+    background-size: cover !important;
+    border-radius: .5rem;
+    justify-content: flex-start;
+    padding: 0.75rem 1rem;
+}
+
+.ad-swiper h3,
+.ad-swiper h6 {
+    color: var(--pass-write);
+    text-align: left;
+}
+
+.ad-swiper h6 {
+    margin: .5rem 0 0 0;
+}
+
+.ad-swiper-wrap {
+    position: relative;
+}
+
+.ad-swiper-wrap .swiper-pagination {
+    bottom: -24px;
+}
+
+.ad-swiper-wrap .swiper-pagination-bullet {
+    background: var(--pass-black);
+    border-radius: 100px;
+}
+
+.ad-swiper-wrap .swiper-pagination-bullet-active {
+    width: 1rem;
 }

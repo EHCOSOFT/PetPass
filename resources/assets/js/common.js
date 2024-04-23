@@ -29,12 +29,12 @@ $(document).ready(function () {
         if ($(e.target).hasClass("modal-wrap")) { // 클릭이 모달 콘텐츠 외부인지 확인
             $(this).removeClass("active");
             $('.wrap').on("wheel", removeDefaultEvent);
-
         }
 
-        $(".modal-wrap").removeClass("active");
+        var modal = $(this).closest(".modal-wrap");
+        modal.removeClass("active");
         window.removeEventListener("wheel", removeDefaultEvent);
-        console.log('qwerq');
+        // console.log('qwerq');
     });
 
     // 모달 내부 클릭 시 닫기 방지
@@ -42,6 +42,18 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 
+    /***
+      * ios 키보드 scroll resize (modal 에서만 생기는 현상) 
+   ****/
+    $('.modal-wrap input').keydown(function (event) {
+        if (event.key === "Enter") {
+            $(this).blur();
+        }
+    });
+
+    $('.modal-wrap input').bind('blur', function (e) {
+        window.scrollTo(0, 1);
+    });
 
     /***
        * 하단 이벤트
@@ -85,4 +97,9 @@ $(document).ready(function () {
             $('.input-group').addClass('d-none');
         }
     });
+});
+
+window.addEventListener("DOMContentLoaded", function (ev) {
+    const { innerHeight } = window;
+    document.documentElement.style.setProperty("--app-height", `${innerHeight}px`);
 });

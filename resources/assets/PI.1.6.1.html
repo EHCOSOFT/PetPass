@@ -53,7 +53,8 @@
                             <li>1</li>
                             <li>2<span class="birthday"><i class="ico i-cake-w"></i></span></li>
                             <li>3</li>
-                            <li class="today open-modal" data-modal-id="scheduleDetailModal">4<span class="injection"><i class="ico i-injection-w"></i></span></li>
+                            <li class="today open-modal" data-modal-id="scheduleDetailModal">4<span class="injection"><i
+                                        class="ico i-injection-w"></i></span></li>
                             <li>5</li>
                             <li>6</li>
                             <li>7</li>
@@ -112,7 +113,7 @@
                             <label for="">일정<span>*</span></label>
                             <div class="date-time-area">
                                 <div class="date-area">
-                                    <input type="date" disabled>
+                                    <input type="date">
                                     <i class="ico i-calendar"></i>
                                 </div>
                                 <div class="time-area">
@@ -124,7 +125,7 @@
                         <div class="input-group">
                             <label for="">반복설정<span>*</span></label>
                             <div class="input-area">
-                                <input type="text" value="반복안함" disabled>
+                                <input type="text" value="반복안함">
                                 <button type="button" class="btn btn-repeat open-modal"
                                     data-modal-id="repeatScheduleModal">설정</button>
                             </div>
@@ -252,104 +253,102 @@
                 <div class="modal-header">
                     <h2>반복 일정 설정</h2>
                 </div>
-                <form action="">
-                    <div class="modal-body">
-                        <div class="container">
-                            <div class="repeat-input">
-                                <div class="radio-group repeat">
-                                    <h4>반복주기<span>*</span></h4>
-                                    <div class="radio-area">
-                                        <div class="radio-group">
-                                            <input type="radio" name="repeat" id="none">
-                                            <label for="none">없음</label>
-                                        </div>
-                                        <div class="radio-group">
-                                            <input type="radio" name="repeat" id="day">
-                                            <label for="day">일</label>
-                                        </div>
-                                        <div class="radio-group">
-                                            <input type="radio" name="repeat" id="week">
-                                            <label for="week">주</label>
-                                        </div>
-                                        <div class="radio-group">
-                                            <input type="radio" name="repeat" id="month">
-                                            <label for="month">월</label>
-                                        </div>
-                                        <div class="radio-group">
-                                            <input type="radio" name="repeat" id="year">
-                                            <label for="year">년</label>
-                                        </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="repeat-input">
+                            <div class="radio-group repeat">
+                                <h4>반복주기<span>*</span></h4>
+                                <div class="radio-area">
+                                    <div class="radio-group">
+                                        <input type="radio" name="repeat" id="none">
+                                        <label for="none">없음</label>
                                     </div>
-                                </div>
-                                <div class="input-group">
-                                    <div class="input-area">
-                                        <input type="text">
-                                        <span>주마다</span>
+                                    <div class="radio-group">
+                                        <input type="radio" name="repeat" id="day">
+                                        <label for="day">일</label>
                                     </div>
-                                </div>
-                                <div class="radio-group repeat">
-                                    <div class="radio-area">
-                                        <div class="radio-group">
-                                            <input type="radio" name="weekday" id="monday">
-                                            <label for="monday">월</label>
-                                        </div>
-                                        <div class="radio-group">
-                                            <input type="radio" name="weekday" id="tuesday">
-                                            <label for="tuesday">화</label>
-                                        </div>
-                                        <div class="radio-group">
-                                            <input type="radio" name="weekday" id="wednesday">
-                                            <label for="wednesday">수</label>
-                                        </div>
-                                        <div class="radio-group">
-                                            <input type="radio" name="weekday" id="thursday">
-                                            <label for="thursday">목</label>
-                                        </div>
-                                        <div class="radio-group">
-                                            <input type="radio" name="weekday" id="friday">
-                                            <label for="friday">금</label>
-                                        </div>
-                                        <div class="radio-group">
-                                            <input type="radio" name="weekday" id="saturday">
-                                            <label for="saturday">토</label>
-                                        </div>
-                                        <div class="radio-group">
-                                            <input type="radio" name="weekday" id="sunday">
-                                            <label for="sunday">일</label>
-                                        </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="repeat" id="week">
+                                        <label for="week">주</label>
                                     </div>
-                                </div>
-
-                                <div class="radio-group period">
-                                    <h4>기간<span>*</span></h4>
-                                    <div class="radio-area">
-                                        <div class="radio-group circle-red">
-                                            <input type="radio" name="period" id="radio123">
-                                            <label for="radio123">계속반복</label>
-                                        </div>
-                                        <div class="radio-group circle-red">
-                                            <input type="radio" name="period" id="radio1234">
-                                            <label for="radio1234">종료일 설정</label>
-                                        </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="repeat" id="month">
+                                        <label for="month">월</label>
                                     </div>
-                                    <div class="date-group">
-                                        <div class="date-area">
-                                            <input type="date">
-                                            <i class="ico i-calendar"></i>
-                                        </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="repeat" id="year">
+                                        <label for="year">년</label>
                                     </div>
-                                </div>
-                                <div class="repeat-info">
-                                    <p>1주마다 <span>월요일</span>에 반복되는 일정입니다.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="btn-group last">
-                            <button type="button" class="btn btn-md btn-outline-gray btn-modal-close">취소</button>
-                            <button type="button" class="btn btn-md btn-gray">동의</button>
+                            <div class="input-group">
+                                <div class="input-area">
+                                    <input type="number" id="weekless">
+                                    <span>주마다</span>
+                                </div>
+                            </div>
+                            <div class="radio-group repeat">
+                                <div class="radio-area">
+                                    <div class="radio-group">
+                                        <input type="radio" name="weekday" id="monday">
+                                        <label for="monday">월</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="weekday" id="tuesday">
+                                        <label for="tuesday">화</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="weekday" id="wednesday">
+                                        <label for="wednesday">수</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="weekday" id="thursday">
+                                        <label for="thursday">목</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="weekday" id="friday">
+                                        <label for="friday">금</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="weekday" id="saturday">
+                                        <label for="saturday">토</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="weekday" id="sunday">
+                                        <label for="sunday">일</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="radio-group period">
+                                <h4>기간<span>*</span></h4>
+                                <div class="radio-area">
+                                    <div class="radio-group circle-red">
+                                        <input type="radio" name="period" id="radio123">
+                                        <label for="radio123">계속반복</label>
+                                    </div>
+                                    <div class="radio-group circle-red">
+                                        <input type="radio" name="period" id="radio1234">
+                                        <label for="radio1234">종료일 설정</label>
+                                    </div>
+                                </div>
+                                <div class="date-group">
+                                    <div class="date-area">
+                                        <input type="date">
+                                        <i class="ico i-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="repeat-info">
+                                <p>1주마다 <span>월요일</span>에 반복되는 일정입니다.</p>
+                            </div>
                         </div>
                     </div>
-                </form>
+                    <div class="btn-group last">
+                        <button type="button" class="btn btn-md btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-md btn-gray">동의</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -491,7 +490,8 @@
                                     </ul>
                                 </div>
                                 <div class="calendar-detail-footer">
-                                    <button type="button" class="btn btn-outline-gray"><i class="ico i-plus"></i>일정등록</button>
+                                    <button type="button" class="btn btn-outline-gray"><i
+                                            class="ico i-plus"></i>일정등록</button>
                                 </div>
                             </div>
                         </div>
@@ -574,7 +574,8 @@
                                     </ul>
                                 </div>
                                 <div class="calendar-detail-footer">
-                                    <button type="button" class="btn btn-outline-gray"><i class="ico i-plus"></i>일정등록</button>
+                                    <button type="button" class="btn btn-outline-gray"><i
+                                            class="ico i-plus"></i>일정등록</button>
                                 </div>
                             </div>
                         </div>
@@ -657,7 +658,8 @@
                                     </ul>
                                 </div>
                                 <div class="calendar-detail-footer">
-                                    <button type="button" class="btn btn-outline-gray"><i class="ico i-plus"></i>일정등록</button>
+                                    <button type="button" class="btn btn-outline-gray"><i
+                                            class="ico i-plus"></i>일정등록</button>
                                 </div>
                             </div>
                         </div>
