@@ -53,8 +53,10 @@
                             <li>1</li>
                             <li>2<span class="birthday"><i class="ico i-cake-w"></i></span></li>
                             <li>3</li>
-                            <li class="today open-modal" data-modal-id="scheduleDetailModal">4<span class="injection"><i
-                                        class="ico i-injection-w"></i></span></li>
+                            <li class="today open-modal" data-modal-id="scheduleDetailModal">
+                                4
+                                <span class="injection"><i class="ico i-injection-w"></i></span>
+                            </li>
                             <li>5</li>
                             <li>6</li>
                             <li>7</li>
@@ -69,8 +71,8 @@
                             <li>16</li>
                             <li>17</li>
                             <li>18</li>
-                            <li>19<span class="shopping"><i class="ico i-injection-w"></i></span></li>
-                            <li>20</li>
+                            <li>19<span class="shopping"><i class="ico i-shopping-w"></i></span></li>
+                            <li>20<span class="hospital"><i class="ico i-hospital-w"></i></span></li>
                             <li>21</li>
                             <li>22<span class="beauty"><i class="ico i-beauty-w"></i></span></li>
                             <li>23</li>
@@ -109,7 +111,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="input-wrap">
-                        <div class="date-group">
+                        <div class="date-group error">
                             <label for="">일정<span>*</span></label>
                             <div class="date-time-area">
                                 <div class="date-area">
@@ -121,6 +123,7 @@
                                     <i class="ico i-time"></i>
                                 </div>
                             </div>
+                            <small>! 일정을 선택해주세요.</small>
                         </div>
                         <div class="input-group">
                             <label for="">반복설정<span>*</span></label>
@@ -130,7 +133,7 @@
                                     data-modal-id="repeatScheduleModal">설정</button>
                             </div>
                         </div>
-                        <div class="radio-group division">
+                        <div class="radio-group division error">
                             <h4>구분<span>*</span></h4>
                             <div class="radio-area">
                                 <div class="radio-group">
@@ -169,6 +172,7 @@
                                     </label>
                                 </div>
                             </div>
+                            <small>! 구분을 선택해주세요.</small>
                         </div>
                         <div class="radio-group division">
                             <h4>반려동물<span>*</span></h4>

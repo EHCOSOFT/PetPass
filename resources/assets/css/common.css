@@ -642,6 +642,7 @@ button:disabled {
     display: flex;
     gap: 0.5rem;
     position: relative;
+    width: 100%;
 }
 
 .input-area span {
@@ -1235,6 +1236,7 @@ input:disabled {
 .date-time-area {
     display: flex;
     gap: .5rem;
+    justify-content: flex-start;
 }
 
 .date-group label {
@@ -1336,11 +1338,11 @@ input:disabled {
 
 .date-group.error input {
     border: 1px solid var(--pass-red);
-    color: var(--pass-red);
 }
 
 .date-group.error small {
     color: var(--pass-red);
+    text-align: left;
 }
 
 
@@ -1604,6 +1606,7 @@ input:disabled {
     background: var(--pass-write);
     display: flex;
     flex-direction: column;
+    flex: 0 0 auto;
     height: 48px;
     justify-content: center;
     left: 0;
@@ -1675,6 +1678,7 @@ input:disabled {
  * **************************************** */
 .footer {
     background: var(--pass-sub-bg);
+    margin: auto 0 0 0;
 }
 
 .footer-top {

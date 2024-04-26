@@ -10,7 +10,8 @@
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    max-height: 100%;
+    height: var(--app-height);
+    /* min-height: 100vh; */
     padding: 0;
     max-width: 100%;
 }
@@ -425,7 +426,7 @@
 }
 
 .radio-group.repeat .radio-group {
-    width: calc(100% / 5);
+    width: 100%;
 }
 
 .radio-group.repeat .radio-group input:checked+label {
@@ -569,7 +570,7 @@
 }
 
 .calendar-detail-body {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     justify-content: center;
     min-height: calc(100vh - 22.5rem);
@@ -585,6 +586,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    justify-content: flex-start;
     overflow-y: scroll;
     max-height: calc(100vh - 22.5rem);
     width: 100%;
