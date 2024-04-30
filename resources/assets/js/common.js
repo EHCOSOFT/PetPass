@@ -97,9 +97,16 @@ $(document).ready(function () {
             $('.input-group').addClass('d-none');
         }
     });
+
 });
 
 window.addEventListener("DOMContentLoaded", function (ev) {
     const { innerHeight } = window;
     document.documentElement.style.setProperty("--app-height", `${innerHeight}px`);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var desiredDate = "2024-04";
+    var monthInput = document.getElementById("month");
+    monthInput.value = desiredDate;
 });

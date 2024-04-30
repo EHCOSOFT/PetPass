@@ -156,6 +156,12 @@
     width: 2.25rem;
 }
 
+.i-hospital-g {
+    background: url(../img/ico/i-animal-hospital.png);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
 .i-beauty {
     background: url(../img/ico/i-beauty.png);
     height: 2.25rem;

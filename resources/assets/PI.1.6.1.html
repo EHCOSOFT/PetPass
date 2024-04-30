@@ -30,10 +30,10 @@
                 <div class="calendar-wrap">
                     <div class="calendar-header">
                         <button type="button" class="btn-month-prev"><i class="ico i-arrow-left"></i></button>
-                        <h2>2024년 04월</h2>
+                        <!-- <h2>2024년 04월</h2> -->
                         <div class="month-group">
-                            <input type="month">
-                            <button type="button" class="btn-month"><i class="ico i-arrow-down"></i></button>
+                            <input type="month" id="month">
+                            <i class="ico i-arrow-down"></i>
                         </div>
                         <button type="button" class="btn-month-next"><i class="ico i-arrow-right"></i></button>
                         <button type="button" class="btn-today">오늘</button>
@@ -56,6 +56,7 @@
                             <li class="today open-modal" data-modal-id="scheduleDetailModal">
                                 4
                                 <span class="injection"><i class="ico i-injection-w"></i></span>
+                                <a href="#">+1</a>
                             </li>
                             <li>5</li>
                             <li>6</li>
@@ -119,7 +120,7 @@
                                     <i class="ico i-calendar"></i>
                                 </div>
                                 <div class="time-area">
-                                    <input type="time" name="" id="" disabled>
+                                    <input type="time" name="" id="">
                                     <i class="ico i-time"></i>
                                 </div>
                             </div>
@@ -174,7 +175,7 @@
                             </div>
                             <small>! 구분을 선택해주세요.</small>
                         </div>
-                        <div class="radio-group division">
+                        <div class="radio-group division pet">
                             <h4>반려동물<span>*</span></h4>
                             <div class="radio-area">
                                 <div class="radio-group">
@@ -241,7 +242,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <div class="btn-group">
+                    <div class="btn-group last">
+                        <button type="button" class="btn btn-md btn-outline-gray">취소</button>
                         <button type="button" class="btn btn-md btn-gray">등록</button>
                     </div>
                 </div>
@@ -285,11 +287,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="input-group">
+                            <div class="input-group error">
                                 <div class="input-area">
                                     <input type="number" id="weekless">
                                     <span>주마다</span>
                                 </div>
+                                <small>! 주기를 입력해주세요</small>
                             </div>
                             <div class="radio-group repeat">
                                 <div class="radio-area">
@@ -450,9 +453,9 @@
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="detail-item shopping">
-                                                <span class="icon"><i class="ico i-shopping-g"></i></span>
-                                                <p>포유간식사주기</p>
+                                            <div class="detail-item hospital">
+                                                <span class="icon"><i class="ico i-hospital-g"></i></span>
+                                                <p>포유 병원데려가기<br><b>오후 12:00</b></p>
                                             </div>
                                         </li>
                                         <li>
@@ -504,78 +507,8 @@
                                 <div class="calendar-detail-header">
                                     <h3>2024년 02월 12일 월요일</h3>
                                 </div>
-                                <div class="calendar-detail-body">
-                                    <!-- <p>등록된 일정이 없습니다.</p> -->
-                                    <ul>
-                                        <li>
-                                            <div class="detail-item birthday">
-                                                <span class="icon"><i class="ico i-cake"></i></span>
-                                                <p>포유생일</p>
-                                                <span class="day btn-r btn-mn">D+1234</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="detail-item injection">
-                                                <span class="icon"><i class="ico i-injection"></i></span>
-                                                <p>포유 예방접종<br><b>오후 12:00</b></p>
-                                                <span class="day btn-r btn-mn">D+1234</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="detail-item">
-                                                <span class="icon"><i class="ico i-etc-2"></i></span>
-                                                <p>화성시 반려동물 놀이터<br><b>오후 12:00</b></p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="detail-item beauty">
-                                                <span class="icon"><i class="ico i-beauty-p"></i></span>
-                                                <p>미용실가야지</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="detail-item shopping">
-                                                <span class="icon"><i class="ico i-shopping-g"></i></span>
-                                                <p>포유간식사주기</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="detail-item shopping">
-                                                <span class="icon"><i class="ico i-shopping-g"></i></span>
-                                                <p>포유간식사주기</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="detail-item shopping">
-                                                <span class="icon"><i class="ico i-shopping-g"></i></span>
-                                                <p>포유간식사주기</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="detail-item shopping">
-                                                <span class="icon"><i class="ico i-shopping-g"></i></span>
-                                                <p>포유간식사주기</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="detail-item shopping">
-                                                <span class="icon"><i class="ico i-shopping-g"></i></span>
-                                                <p>포유간식사주기</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="detail-item shopping">
-                                                <span class="icon"><i class="ico i-shopping-g"></i></span>
-                                                <p>포유간식사주기</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="detail-item shopping">
-                                                <span class="icon"><i class="ico i-shopping-g"></i></span>
-                                                <p>포유간식사주기</p>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                <div class="calendar-detail-body none">
+                                    <p>등록된 일정이 없습니다.</p>
                                 </div>
                                 <div class="calendar-detail-footer">
                                     <button type="button" class="btn btn-outline-gray"><i

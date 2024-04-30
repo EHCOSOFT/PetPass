@@ -577,6 +577,10 @@
     margin: 0 1.25rem;
 }
 
+.calendar-detail-body.none {
+    align-items: center;
+}
+
 .calendar-detail-body>p {
     color: var(--pass-black-02);
     font-size: var(--pass-text-md);

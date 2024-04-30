@@ -599,6 +599,7 @@ button:disabled {
     color: var(--pass-darkgray);
     font-size: var(--pass-text-mn);
     font-weight: 400;
+    flex: 0 0 auto;
 }
 
 .card-footer dd {
@@ -706,6 +707,7 @@ input:disabled {
 
 .input-group.error small {
     color: var(--pass-red);
+    text-align: left;
 }
 
 /* search */
@@ -791,6 +793,7 @@ input:disabled {
     font-size: var(--pass-text-md);
     display: flex;
     gap: 0.375rem;
+    padding: 4px 0;
 }
 
 .check-group label::before {
@@ -1083,7 +1086,7 @@ input:disabled {
     border: 1px solid var(--pass-line);
     border-radius: 0.5rem;
     color: var(--pass-gray);
-    font-size: var(--pass-text-md);
+    font-size: var(--pass-text-sm);
     font-weight: 400;
     height: 2.75rem;
     padding: 0 0.75rem;
@@ -1276,7 +1279,7 @@ input:disabled {
     border: 1px solid var(--pass-line);
     border-radius: 0.5rem;
     color: var(--pass-black-01);
-    display: flex;
+    /* display: flex; */
     font-size: var(--pass-text-md);
     font-weight: 400;
     height: 2.75rem;
