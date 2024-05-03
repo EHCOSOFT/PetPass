@@ -1319,7 +1319,9 @@ input:disabled {
 .date-group input[type="date"]::before {
     color: var(--pass-gray);
     content: attr(placeholder);
-    flex: 0 0 auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     width: 100%;
 }
 
