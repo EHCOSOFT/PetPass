@@ -55,6 +55,20 @@
                         </tr>
                     </tbody>
                 </table>
+                <table id="modal">
+                    <tbody>
+                        <tr>
+                            <td>MODAL</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-blue open-modal" data-modal-id="confirmModal">confirm</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
                 
                 <table id="input">
                     <colgroup>
@@ -214,6 +228,24 @@
             </section>
         </section>
     </div>
+
+    <!-- START : confirmModal -->
+    <div id="confirmModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h1>안내</h1>
+                    <h5>메세지를 입력해주세요</h5>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-md btn-blue btn-modal-close">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : confirmModal -->
 
 
 
