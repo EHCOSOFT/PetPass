@@ -15,6 +15,7 @@ $(document).ready(function () {
         if (!$("#" + modalId).hasClass("full-modal")) {
             window.addEventListener("wheel", removeDefaultEvent, { passive: false });
         }
+        window.addEventListener("touchmove", removeDefaultEvent, { passive: false });
     });
 
     // 모달 닫기 버튼 클릭 이벤트
@@ -103,10 +104,4 @@ $(document).ready(function () {
 window.addEventListener("DOMContentLoaded", function (ev) {
     const { innerHeight } = window;
     document.documentElement.style.setProperty("--app-height", `${innerHeight}px`);
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    var desiredDate = "2024-04";
-    var monthInput = document.getElementById("month");
-    monthInput.value = desiredDate;
 });

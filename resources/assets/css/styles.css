@@ -820,27 +820,52 @@ hr.line {
     margin: 0 0 1.25rem 0;
 }
 
+
 .month-group {
     align-items: center;
     display: flex;
+    justify-content: center;
     position: relative;
-    width: auto;
+    text-align: center;
+    gap: 0;
 }
 
-.month-group input {
-    background: none;
+/* 
+.month-group::after {
+    background: url(../img/ico/i-arrow-down.png);
+    background-size: cover;
+    content: '';
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    width: 20px;
+} */
+
+.month-group input[type=month] {
+    -webkit-appearance: none;
+    background: url(../img/ico/i-arrow-down.png)no-repeat 50%/20px;
+    background-position: right 0 center;
     border: 0;
     color: var(--pass-black);
     font-size: 1.125rem;
     font-weight: bold;
     line-height: 1.6875rem;
-    text-align: center;
+    /* transform: translateX(.5rem); */
+    text-align: left;
+    text-align: -webkit-left;
+    margin: 0;
+    padding: 0;
+    width: 128px;
+}
+
+.month-group input::-webkit-date-and-time-value {
+    text-align: left;
 }
 
 .month-group input::-webkit-calendar-picker-indicator {
     -webkit-appearance: none;
     background: none;
-    background-position: right 0 center;
     cursor: pointer;
     height: 100%;
     opacity: 1;
@@ -848,9 +873,11 @@ hr.line {
     left: 0;
     top: -2px;
     width: 100%;
+    z-index: 1;
+
 }
 
-.month-group label {
+/* .month-group label {
     align-items: center;
     color: var(--pass-black);
     cursor: pointer;
@@ -858,7 +885,7 @@ hr.line {
     font-size: 1.125rem;
     font-weight: bold;
     line-height: 1.6875rem;
-}
+} */
 
 .btn-month-prev,
 .btn-month-next {
@@ -874,11 +901,11 @@ hr.line {
 }
 
 .btn-month-prev {
-    margin: 0 1.25rem 0 0;
+    margin: 0 .5rem 0 0;
 }
 
 .btn-month-next {
-    margin: 0 0 0 1.25rem;
+    margin: 0 0 0 .5rem;
 }
 
 .btn-today {
