@@ -828,6 +828,7 @@ hr.line {
     position: relative;
     text-align: center;
     gap: 0;
+    width: 180px;
 }
 
 /* 
@@ -848,6 +849,8 @@ hr.line {
     background-position: right 0 center;
     border: 0;
     color: var(--pass-black);
+    display: flex;
+    justify-content: center;
     font-size: 1.125rem;
     font-weight: bold;
     line-height: 1.6875rem;
@@ -856,11 +859,11 @@ hr.line {
     text-align: -webkit-left;
     margin: 0;
     padding: 0;
-    width: 128px;
+    min-width: 100%;
 }
 
 .month-group input::-webkit-date-and-time-value {
-    text-align: left;
+    text-align: center;
 }
 
 .month-group input::-webkit-calendar-picker-indicator {
@@ -874,7 +877,6 @@ hr.line {
     top: -2px;
     width: 100%;
     z-index: 1;
-
 }
 
 /* .month-group label {
