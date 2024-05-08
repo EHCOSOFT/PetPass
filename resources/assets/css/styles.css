@@ -903,11 +903,11 @@ hr.line {
 }
 
 .btn-month-prev {
-    margin: 0 .5rem 0 0;
+    margin: 0;
 }
 
 .btn-month-next {
-    margin: 0 0 0 .5rem;
+    margin: 0;
 }
 
 .btn-today {
