@@ -11,11 +11,15 @@ $(document).ready(function () {
     // 모달 열기 버튼 클릭 이벤트
     $(".open-modal").click(function () {
         var modalId = $(this).data("modal-id");
+        var $modal = $("#" + modalId);
         $("#" + modalId).addClass("active");
-        if (!$("#" + modalId).hasClass("full-modal")) {
+        if (!($modal.hasClass("full-modal") || $modal.hasClass("toggle-modal"))) {
             window.addEventListener("wheel", removeDefaultEvent, { passive: false });
+        } 
+    
+        if ($modal.hasClass("toggle-modal")) {
+            window.addEventListener("touchmove", removeDefaultEvent, { passive: false });
         }
-        window.addEventListener("touchmove", removeDefaultEvent, { passive: false });
     });
 
     // 모달 닫기 버튼 클릭 이벤트
