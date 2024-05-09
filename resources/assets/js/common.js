@@ -16,7 +16,6 @@ $(document).ready(function () {
         if (!($modal.hasClass("full-modal") || $modal.hasClass("toggle-modal"))) {
             window.addEventListener("wheel", removeDefaultEvent, { passive: false });
         } 
-    
         if ($modal.hasClass("toggle-modal")) {
             window.addEventListener("touchmove", removeDefaultEvent, { passive: false });
         }
@@ -27,6 +26,7 @@ $(document).ready(function () {
         var modal = $(this).closest(".modal-wrap"); // 가장 가까운 모달 찾기
         modal.removeClass("active");
         window.removeEventListener("wheel", removeDefaultEvent);
+        window.removeEventListener("touchmove", removeDefaultEvent); // 모달 닫을 때 터치 이벤트 제거
     });
 
     // 모달 영역 외부를 클릭하여 닫기
@@ -39,7 +39,7 @@ $(document).ready(function () {
         var modal = $(this).closest(".modal-wrap");
         modal.removeClass("active");
         window.removeEventListener("wheel", removeDefaultEvent);
-        // console.log('qwerq');
+        window.removeEventListener("touchmove", removeDefaultEvent); // 모달 닫을 때 터치 이벤트 제거
     });
 
     // 모달 내부 클릭 시 닫기 방지
