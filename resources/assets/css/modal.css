@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 /* full-modal */
 .full-modal {
     background: none;
@@ -9,10 +10,9 @@
     border-radius: 0;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
     height: var(--app-height);
-    /* min-height: 100vh; */
     padding: 0;
+    position: relative;
     max-width: 100%;
 }
 
@@ -22,7 +22,8 @@
     height: 3rem;
     justify-content: center;
     padding: 0 1.125rem;
-    position: sticky;
+    position: fixed;
+    left: 0;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -34,8 +35,11 @@
 }
 
 .full-modal .modal-body {
-    margin: 0;
-    padding: 1.25rem 1.125rem;
+    -webkit-overflow-scrolling: touch;
+    flex: 1;
+    overflow-y: auto;
+    margin: 48px 0 0 0;
+    padding: 1.25rem 1.125rem 5rem 1.125rem;
 }
 
 .full-modal .dl-group {
@@ -344,7 +348,8 @@
     bottom: 0;
     margin: auto 0 0 0;
     padding: 1rem 1.125rem;
-    position: sticky;
+    position: fixed;
+    width: 100%;
 }
 
 /* orderCancelReasonModal */
@@ -547,6 +552,7 @@
 .schedul-modal .modal-inner {
     width: 100%;
 }
+
 .schedul-modal .modal-content {
     background: none;
     padding: 0;

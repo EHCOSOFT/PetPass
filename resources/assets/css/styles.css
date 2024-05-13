@@ -1021,11 +1021,14 @@ hr.line {
 }
 
 .btn-add-schedule {
+    align-items: center;
     background: var(--pass-red);
     bottom: 20px;
     border-radius: 100px;
     border: 0;
+    display: flex;
     height: 48px;
+    justify-content: center;
     position: fixed;
     right: 18px;
     width: 48px;
@@ -1112,4 +1115,19 @@ hr.line {
     /* height: calc(100vh - 103px); */
     /* 광고영역이 없을시 */
     width: 100%;
+}
+
+/* **************************************** *
+ * PI.1.6.1
+ * **************************************** */
+.new-schedule-wrap {
+    margin: 1.25rem 0 0 0;
+}
+
+.new-schedule-wrap .btn-group {
+    background: var(--pass-write);
+    bottom: 0;
+    margin: auto 0 0 0;
+    padding: 1rem 1.125rem;
+    position: sticky;
 }

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Pet PASS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- START : Header -->
+        <header class="header">
+            <div class="container">
+                <h3>일정등록</h3>
+                <a href="#" class="last">
+                    <i class="ico i-x"></i>
+                </a>
+            </div>
+        </header>
+        <!-- END : Header -->
+
+        <!-- START : Content -->
+        <main>
+            <div class="new-schedule-wrap">
+                <section class="container">
+                    <div class="input-wrap">
+                        <div class="date-group error">
+                            <label for="">일정<span>*</span></label>
+                            <div class="date-time-area">
+                                <div class="date-area">
+                                    <input type="date">
+                                    <i class="ico i-calendar"></i>
+                                </div>
+                                <div class="time-area">
+                                    <input type="time" name="" id="">
+                                    <i class="ico i-time"></i>
+                                </div>
+                            </div>
+                            <small>! 일정을 선택해주세요.</small>
+                        </div>
+                        <div class="input-group">
+                            <label for="">반복설정<span>*</span></label>
+                            <div class="input-area">
+                                <input type="text" value="반복안함">
+                                <button type="button" class="btn btn-repeat open-modal"
+                                    data-modal-id="repeatScheduleModal">설정</button>
+                            </div>
+                        </div>
+                        <div class="radio-group division error">
+                            <h4>구분<span>*</span></h4>
+                            <div class="radio-area">
+                                <div class="radio-group">
+                                    <input type="radio" name="division" id="radio01">
+                                    <label for="radio01">
+                                        <span><i class="ico i-vaccination"></i></span>
+                                        예방접종
+                                    </label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" name="division" id="radio02">
+                                    <label for="radio02">
+                                        <span><i class="ico i-hospital"></i></span>
+                                        동물병원
+                                    </label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" name="division" id="radio03">
+                                    <label for="radio03">
+                                        <span><i class="ico i-beauty"></i></span>
+                                        미용
+                                    </label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" name="division" id="radio04">
+                                    <label for="radio04">
+                                        <span><i class="ico i-shopping"></i></span>
+                                        쇼핑
+                                    </label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" name="division" id="radio05">
+                                    <label for="radio05">
+                                        <span><i class="ico i-etc"></i></span>
+                                        기타
+                                    </label>
+                                </div>
+                            </div>
+                            <small>! 구분을 선택해주세요.</small>
+                        </div>
+                        <div class="radio-group division pet">
+                            <h4>반려동물<span>*</span></h4>
+                            <div class="radio-area">
+                                <div class="radio-group">
+                                    <input type="radio" name="pet" id="radio06">
+                                    <label for="radio06">
+                                        <span><i class="ico i-puppy"></i></span>
+                                        포유
+                                    </label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" name="pet" id="radio07">
+                                    <label for="radio07">
+                                        <span><i class="ico i-puppy"></i></span>
+                                        나나
+                                    </label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" name="pet" id="radio08">
+                                    <label for="radio08">
+                                        <span><i class="ico i-cat"></i></span>
+                                        크림
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check-wrap vertical">
+                            <h4>내용<span>*</span></h4>
+                            <div class="check-area pet">
+                                <div class="check-group red">
+                                    <input type="checkbox" id="check01">
+                                    <label for="check01">종합백신</label>
+                                </div>
+                                <div class="check-group red">
+                                    <input type="checkbox" id="check02">
+                                    <label for="check02">고양이백혈병(Feline Leukemia)</label>
+                                </div>
+                                <div class="check-group red">
+                                    <input type="checkbox" id="check03">
+                                    <label for="check03">전염성복막염(FIP)</label>
+                                </div>
+                                <div class="check-group red">
+                                    <input type="checkbox" id="check04">
+                                    <label for="check04">광견병</label>
+                                </div>
+                                <div class="check-group red">
+                                    <input type="checkbox" id="check05">
+                                    <label for="check05">심장사상충</label>
+                                </div>
+                                <div class="check-group red">
+                                    <input type="checkbox" id="check06">
+                                    <label for="check06">외부기생충</label>
+                                </div>
+                                <small>! 접종내역을 선택해주세요.</small>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="">내용</label>
+                            <input type="text" placeholder="내용을 간단하게 입력해주세요.(최대 10자)">
+                        </div>
+                        <div class="input-group">
+                            <label for="">금액</label>
+                            <input type="text" placeholder="사용하신 금액을 입력해주세요.">
+                        </div>
+                    </div>
+                </section>
+                <div class="btn-group last">
+                    <button type="button" class="btn btn-md btn-outline-gray">취소</button>
+                    <button type="button" class="btn btn-md btn-gray">등록</button>
+                </div>
+            </div>
+        </main>
+        <!-- END : Content -->
+
+    </div>
+
+
+    <!-- START : repeatScheduleModal -->
+    <div id="repeatScheduleModal" class="modal-wrap toggle-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>반복 일정 설정</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="repeat-input">
+                            <div class="radio-group repeat">
+                                <h4>반복주기<span>*</span></h4>
+                                <div class="radio-area">
+                                    <div class="radio-group">
+                                        <input type="radio" name="repeat" id="none">
+                                        <label for="none">없음</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="repeat" id="day">
+                                        <label for="day">일</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="repeat" id="week">
+                                        <label for="week">주</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="repeat" id="month">
+                                        <label for="month">월</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="repeat" id="year">
+                                        <label for="year">년</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group error">
+                                <div class="input-area">
+                                    <input type="number" id="weekless">
+                                    <span>주마다</span>
+                                </div>
+                                <small>! 주기를 입력해주세요</small>
+                            </div>
+                            <div class="radio-group repeat">
+                                <div class="radio-area">
+                                    <div class="radio-group">
+                                        <input type="radio" name="weekday" id="monday">
+                                        <label for="monday">월</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="weekday" id="tuesday">
+                                        <label for="tuesday">화</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="weekday" id="wednesday">
+                                        <label for="wednesday">수</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="weekday" id="thursday">
+                                        <label for="thursday">목</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="weekday" id="friday">
+                                        <label for="friday">금</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="weekday" id="saturday">
+                                        <label for="saturday">토</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" name="weekday" id="sunday">
+                                        <label for="sunday">일</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="radio-group period">
+                                <h4>기간<span>*</span></h4>
+                                <div class="radio-area">
+                                    <div class="radio-group circle-red">
+                                        <input type="radio" name="period" id="radio123">
+                                        <label for="radio123">계속반복</label>
+                                    </div>
+                                    <div class="radio-group circle-red">
+                                        <input type="radio" name="period" id="radio1234">
+                                        <label for="radio1234">종료일 설정</label>
+                                    </div>
+                                </div>
+                                <div class="date-group">
+                                    <div class="date-area">
+                                        <input type="date">
+                                        <i class="ico i-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="repeat-info">
+                                <p>1주마다 <span>월요일</span>에 반복되는 일정입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-group last">
+                        <button type="button" class="btn btn-md btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-md btn-gray">동의</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : repeatScheduleModal -->
+
+    <!-- START : Script -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".schedul-swiper", {
+            slidesPerView: 1.2,
+            spaceBetween: 12,
+            centeredSlides: true,
+        });
+    </script>
+    <script src="js/common.js"></script>
+    <!-- END : Script -->
+</body>
+
+</html>
