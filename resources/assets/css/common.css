@@ -76,8 +76,8 @@ body {
     font-size: var(--pass-body-font-size);
     font-weight: var(--pass-body-font-weight);
     line-height: 1.5;
-    overscroll-behavior: none;
-    height: calc(var(--vh, 1vh) * 100);
+    /* overflow: hidden; */
+    height: var(--app-height);
     margin: 0;
 }
 

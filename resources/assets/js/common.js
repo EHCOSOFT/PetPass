@@ -106,7 +106,11 @@ $(document).ready(function () {
 
 });
 
-window.addEventListener("DOMContentLoaded", function (ev) {
-    const { innerHeight } = window;
-    document.documentElement.style.setProperty("--app-height", `${innerHeight}px`);
-});
+function setAppHeight() {
+    const appHeight = window.innerHeight;
+    document.documentElement.style.setProperty('--app-height', `${appHeight}px`);
+}
+
+window.addEventListener('DOMContentLoaded', setAppHeight);
+window.addEventListener('resize', setAppHeight);
+window.addEventListener('orientationchange', setAppHeight);

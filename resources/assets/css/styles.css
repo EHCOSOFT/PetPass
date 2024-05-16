@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-height: 100vh;
+    min-height: var(--app-height);
     position: relative;
 }
 
@@ -397,7 +397,7 @@ hr.line {
 .pet-reg-wrap {
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - 4.25rem);
+    min-height: calc(var(--app-height) - 4.25rem);
     margin: 1.25rem 0 0 0;
 }
 
@@ -716,8 +716,8 @@ hr.line {
     border-bottom: 1px solid var(--pass-line);
     display: flex;
     gap: 1rem;
-    padding: 0 1.125rem;
-    margin: 1.25rem 0 0 0;
+    padding: 1.25rem 1.125rem 0 1.125rem;
+    /* margin: 1.25rem  0 0; */
 }
 
 .nav-item li a {
@@ -1114,9 +1114,9 @@ hr.line {
 }
 
 .map-wrap {
-    height: calc(100vh - 247px);
-    /* height: calc(100vh - 103px); */
-    /* 광고영역이 없을시 */
+    background: red;
+    /* height: calc(var(--app-height) - 247px); */
+    height: calc(var(--app-height) - 103px); /* 광고영역이 없을시 */
     width: 100%;
 }
 

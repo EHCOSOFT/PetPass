@@ -182,7 +182,9 @@
 
 .ad-swiper .swiper-slide img {
     border-radius: .5rem;
+    height: 88px;
 }
+
 .ad-swiper h3,
 .ad-swiper h6 {
     color: var(--pass-write);
