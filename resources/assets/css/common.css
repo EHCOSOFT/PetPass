@@ -235,7 +235,7 @@ h6,
 }
 
 .mt-10 {
-    margin-top: 2.5rem;
+    margin-top: 2.5rem !important;
 }
 
 /* **************************************** *
@@ -867,6 +867,9 @@ input:disabled {
     background-size: cover;
 }
 
+.check-group.red-circle input:disabled+label {
+    background: var(--pass-sub-bg);
+}
 /* radio */
 .radio-wrap {
     align-items: center;
