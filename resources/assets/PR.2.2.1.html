@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Pet PASS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- START : Header -->
+        <header class="header">
+            <div class="container">
+                <h3>배송정보 변경</h3>
+                <a href="#" class="last">
+                    <i class="ico i-x"></i>
+                </a>
+            </div>
+        </header>
+        <!-- END : Header -->
+
+        <!-- START : Content -->
+        <main>
+            <div class="main-wrap">
+                <section class="container">
+                    <div class="info-input">
+                        <h3>수령인 정보</h3>
+                        <div class="input-wrap">
+                            <div class="input-group">
+                                <label for="">이름<span>*</span></label>
+                                <input type="text" id="text02" placeholder="이름을 입력해주세요.">
+                            </div>
+                            <div class="input-group">
+                                <label for="">휴대폰 번호<span>*</span></label>
+                                <input type="text" id="text02" placeholder="휴대폰 번호를 입력해주세요( - 없이 입력)">
+                            </div>
+                            <div class="input-group">
+                                <label for="">현 거주지 주소<span>*</span></label>
+                                <div class="input-search">
+                                    <input type="text" id="text02" placeholder="현 거주지 주소">
+                                    <button type="button"><i class="ico i-search"></i></button>
+                                </div>
+                                <input type="text" id="text02" placeholder="상세주소">
+                            </div>
+                            <div class="input-group select-group">
+                                <label for="">배송요청사항</label>
+                                <div class="input-area">
+                                    <input type="text" placeholder="배송요청사항을 선택해주세요." class="open-modal"
+                                        data-modal-id="deliveryRequestModal">
+                                    <i class="ico i-arrow-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="btn-group last">
+                    <button type="button" class="btn btn-outline-gray btn-md">취소</button>
+                    <button type="button" class="btn btn-blue btn-md">변경</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- START : Script -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- END : Script -->
+</body>
+
+</html>

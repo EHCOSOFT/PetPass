@@ -15,38 +15,35 @@
         <!-- START : Header -->
         <header class="header">
             <div class="container">
-                <a href="#">
-                    <i class="ico i-back"></i>
+                <h3>반려동물 정보 변경</h3>
+                <a href="#" class="last">
+                    <i class="ico i-x"></i>
                 </a>
-                <h3>국가동물등록 신청</h3>
             </div>
-            <progress id="file" max="100" value="70">70%</progress>
         </header>
         <!-- END : Header -->
 
         <!-- START : Content -->
         <main>
-            <form action="">
+            <div class="main-wrap">
                 <section class="container">
                     <div class="info-input">
-                        <h2>반려동물 정보</h2>
+                        <h3>반려동물 정보</h3>
                         <div class="input-wrap">
                             <div class="input-group">
                                 <label for="">이름<span>*</span></label>
                                 <input type="text" id="text02" placeholder="반려동물의 이름을 입력해주세요.">
                             </div>
-                            <div class="input-group" >
+                            <div class="input-group">
                                 <label for="">품종<span>*</span></label>
-                                <div class="input-search" onclick="location.href='PR.1.4.1.html'">
+                                <div class="input-search open-modal" data-modal-id="kindModal">
                                     <input type="text" id="text02" placeholder="품종을 선택해주세요.">
                                     <button type="button"><i class="ico i-search"></i></button>
                                 </div>
                             </div>
-                            <div class="select-group">
-                                <h4>털색<span>*</span></h4>
-                                <select name="" id="">
-                                    <option value="">품종 선택 후 털색을 입력해주세요.</option>
-                                </select>
+                            <div class="input-group">
+                                <label for="">털색<span>*</span></label>
+                                <input type="text" id="text02" placeholder="품종 선택 후 털색을 입력해주세요.">
                             </div>
                             <div class="radio-group outline">
                                 <h4>성별<span>*</span></h4>
@@ -69,19 +66,19 @@
                             <div class="date-group">
                                 <label for="">생년월일<span>*</span></label>
                                 <div class="date-area">
-                                    <input type="date" placeholder="생년월일을 입력해주세요." required>
+                                    <input type="date" placeholder="생년월일을 입력해주세요." required="">
                                     <i class="ico i-calendar"></i>
                                 </div>
                             </div>
                             <div class="date-group">
                                 <label for="">입양일<span>*</span></label>
                                 <div class="date-area">
-                                    <input type="date" placeholder="입양일을 입력해주세요." required>
+                                    <input type="date" placeholder="입양일을 입력해주세요." required="">
                                     <i class="ico i-calendar"></i>
                                 </div>
                                 <div class="check-group blue-circle">
-                                    <input type="checkbox" id="chk01">
-                                    <label for="chk01">생년월일과 동일해요.</label>
+                                    <input type="checkbox" id="chk02">
+                                    <label for="chk02">생년월일과 동일해요.</label>
                                 </div>
                             </div>
                             <div class="radio-group outline">
@@ -106,12 +103,12 @@
                         </div>
                     </div>
                 </section>
-                <div class="btn-group bottom">
-                    <button type="button" class="btn btn-blue btn-md">다음</button>
+                <div class="btn-group last">
+                    <button type="button" class="btn btn-outline-gray btn-md">취소</button>
+                    <button type="button" class="btn btn-blue btn-md">변경</button>
                 </div>
-            </form>
+            </div>
         </main>
-        <!-- END : Content -->
     </div>
 
 

@@ -49,7 +49,7 @@
     --pass-main-bg: #ffffff;
     --pass-sub-bg: #F5F5F5;
     --dr-blue: #003595;
-    --dr-navy: #062565;
+    --dr-navy: #062565; 
     --dr-green: #00783F;
     --pass-body-font-size: 16px;
     --pass-body-font-weight: 400;
@@ -2263,4 +2263,16 @@ input:disabled {
     100% {
         transform: rotate(180deg);
     }
+}
+
+.main-wrap {
+    margin: 1.25rem 0 5rem  0;
+}
+
+.main-wrap .btn-group {
+    background: var(--pass-write);
+    bottom: 0;
+    margin: auto 0 0 0;
+    padding: 1rem 1.125rem;
+    position: fixed;
 }

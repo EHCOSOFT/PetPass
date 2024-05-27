@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Pet PASS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- START : Header -->
+        <header class="header">
+            <div class="container">
+                <h3>주문 취소 신청</h3>
+                <a href="#" class="last">
+                    <i class="ico i-x"></i>
+                </a>
+            </div>
+        </header>
+        <!-- END : Header -->
+
+        <!-- START : Content -->
+        <main>
+            <div class="main-wrap">
+                <section class="container">
+                    <div class="info-input">
+                        <h3>주문 취소 사유를 선택해주세요.</h3>
+                        <div class="input-wrap">
+                            <div class="radio-group">
+                                <input type="radio" id="radio01" name="order-cancel-reason">
+                                <label for="radio01">상품이 마음에 들지 않음(단순변심)</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="radio02" name="order-cancel-reason">
+                                <label for="radio02">상품의 옵션선택을 잘못함</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="radio03" name="order-cancel-reason">
+                                <label for="radio03">다른 사이트의 가격이 더 저렴함</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="radio04" name="order-cancel-reason" class="cancel-input">
+                                <label for="radio04">기타(직접입력)</label>
+                            </div>
+                            <div class="input-group d-none">
+                                <input type="text" placeholder="취소 사유를 입력해주세요.">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="btn-group last">
+                    <button type="button" class="btn btn-outline-gray btn-md">취소</button>
+                    <button type="button" class="btn btn-blue btn-md">변경</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- START : Script -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- END : Script -->
+</body>
+
+</html>
