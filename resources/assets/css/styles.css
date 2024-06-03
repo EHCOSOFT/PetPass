@@ -799,6 +799,7 @@ hr.line {
     color: var(--pass-black);
     font-size: var(--pass-text-sm);
     flex: 0 0 auto;
+    width: 52px;
 }
 
 .item-detail-info dd,
