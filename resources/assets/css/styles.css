@@ -866,6 +866,12 @@ hr.line {
     min-width: 100%;
 }
 
+.month-group input[type=month]:disabled {
+    background: none !important;
+    border: 0 !important;
+    color: var(--pass-black) !important;
+}
+
 .month-group input::-webkit-date-and-time-value {
     text-align: center;
 }
