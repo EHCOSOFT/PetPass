@@ -849,8 +849,8 @@ hr.line {
 
 .month-group input[type=month] {
     -webkit-appearance: none;
-    background: url(../img/ico/i-arrow-down.png)no-repeat 50%/20px;
-    background-position: right 0 center;
+    /* background: url(../img/ico/i-arrow-down.png)no-repeat 50%/20px;
+    background-position: right 0 center; */
     border: 0;
     color: var(--pass-black);
     display: flex;
@@ -859,8 +859,8 @@ hr.line {
     font-weight: bold;
     line-height: 1.6875rem;
     /* transform: translateX(.5rem); */
-    text-align: left;
-    text-align: -webkit-left;
+    text-align: center;
+    text-align: -webkit-center;
     margin: 0;
     padding: 0;
     min-width: 100%;
