@@ -1063,13 +1063,14 @@ hr.line {
 
 .radio-group.division .radio-area {
     display: flex;
+    flex-wrap: wrap;
     gap: .25rem;
     width: 100%;
 }
 
 .radio-group.division .radio-area .radio-group {
     display: block;
-    width: calc(100% / 5);
+    width: calc((100% / 5) - 4px);
 }
 
 .radio-group.division label {
@@ -1123,7 +1124,8 @@ hr.line {
 .map-wrap {
     background: red;
     /* height: calc(var(--app-height) - 247px); */
-    height: calc(var(--app-height) - 103px); /* 광고영역이 없을시 */
+    height: calc(var(--app-height) - 103px);
+    /* 광고영역이 없을시 */
     width: 100%;
 }
 
