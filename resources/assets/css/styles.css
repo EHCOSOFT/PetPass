@@ -215,6 +215,15 @@
     width: 68px;
 }
 
+.product-img02 {
+    background: url(../img/product-01.png);
+    background-size: cover;
+    border: 1px solid var(--pass-line);
+    border-radius: .5rem;
+    height: 68px;
+    width: 68px;
+}
+
 .product-text {
     display: flex;
     flex-direction: column;
@@ -1142,4 +1151,19 @@ hr.line {
     margin: auto 0 0 0;
     padding: 1rem 1.125rem;
     position: sticky;
+}
+
+/* **************************************** *
+ * 개인정보 제3자 제공동의
+ * **************************************** */
+.terms table {
+    border-collapse: collapse;
+    border-top: 1px solid var(--pass-black);
+}
+
+.terms table tr th,
+.terms table tr td {
+    border-bottom: 1px solid var(--pass-line);
+    font-size: var(--pass-text-md);
+    padding: 12px;
 }

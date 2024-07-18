@@ -195,6 +195,14 @@
     width: 5.25rem;
 }
 
+.product-detail-img02 {
+    background: url(../img/product-03.png);
+    background-size: cover;
+    border-radius: .5rem;
+    height: 5.25rem;
+    width: 5.25rem;
+}
+
 .product-detail-text {
     display: flex;
     flex-direction: column;
@@ -241,7 +249,7 @@
 
 .product-spec-info dd {
     color: var(--pass-darkgray);
-    font-size: var(--pass-text-mn);
+    font-size: var(--pass-text-mn);3
     text-align: left;
 }
 
