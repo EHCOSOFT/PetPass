@@ -309,13 +309,13 @@ button {
     display: flex;
     gap: 0.25rem;
     justify-content: center;
-    transition: .5s all;
+    /* transition: .5s all; */
 }
 
-button:hover,
+/* button:hover,
 button:focus {
     transition: .5s all;
-}
+} */
 
 .btn-group {
     align-items: center;
