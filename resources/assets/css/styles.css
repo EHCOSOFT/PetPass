@@ -509,7 +509,7 @@ hr.line {
 }
 
 .pet-header .btn-group button {
-    flex: unset;
+    flex: 0 0 auto;
 }
 
 .pet-detail {
