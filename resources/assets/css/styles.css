@@ -473,6 +473,7 @@ hr.line {
 .pet-header {
     align-items: center;
     display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -503,7 +504,6 @@ hr.line {
 
 .pet-header .btn-group {
     gap: 0.25rem;
-    margin: 0 0 0 auto;
     width: auto;
 }
 
