@@ -504,7 +504,8 @@ hr.line {
 
 .pet-header .btn-group {
     gap: 0.25rem;
-    width: auto;
+    justify-content: flex-end;
+    width: 60px;
 }
 
 .pet-header .btn-group button {
