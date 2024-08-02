@@ -25,20 +25,20 @@
 
 .i-search {
     background: url(../img/ico/i-search.png);
-    height: 1.25rem;
-    width: 1.25rem;
+    height: 22px;
+    width: 22px;
 }
 
 .i-calendar {
     background: url(../img/ico/i-calendar.png);
-    height: 1.25rem;
-    width: 1.25rem;
+    height: 22px;
+    width: 22px;
 }
 
 .i-arrow-clockwise {
     background: url(../img/ico/i-arrow-clockwise.png);
-    height: 1rem;
-    width: 1rem;
+    height: 22px;
+    width: 22px;
 }
 
 .i-arrow-down {
@@ -49,8 +49,8 @@
 
 .i-circle-down {
     background: url(../img/ico/i-circle-arrow-down.png);
-    height: 1.25rem;
-    width: 1.25rem;
+    height: 24px;
+    width: 24px;
 }
 
 .i-boy {

@@ -46,9 +46,15 @@
                                     <span>-</span>
                                     <input type="text" id="text02" placeholder="주민등록번호 뒷자리">
                                 </div>
+                                <small>* 주민등록번호는 당사 수집이 아닌 동물등록을 위해 국가에서 요구하는 사항입니다.</small>
                             </div>
                             <div class="input-group">
-                                <label for="">현 거주지 주소<span>*</span></label>
+                                <label for="">현 거주지 주소<span>*</span>
+                                    <div class="check-group blue-circle">
+                                        <input type="checkbox" id="chk01">
+                                        <label for="chk01">현 거주지 주소와 동일해요.</label>
+                                    </div>
+                                </label>
                                 <div class="input-search">
                                     <input type="text" id="text02" placeholder="현 거주지 주소">
                                     <button type="button"><i class="ico i-search"></i></button>
@@ -62,18 +68,14 @@
                                     <button type="button"><i class="ico i-search"></i></button>
                                 </div>
                                 <input type="text" id="text02" placeholder="상세주소">
-                                <div class="check-group blue-circle">
-                                    <input type="checkbox" id="chk01">
-                                    <label for="chk01">현 거주지 주소와 동일해요.</label>
-                                </div>
                             </div>
                             <div class="es-group">
                                 <h5>전자서명<span>*</span></h5>
-                                <div class="es-box">
+                                <div class="es-box open-modal" data-modal-id="esModal">
                                     <h5>서명을 해주세요.</h5>
                                 </div>
                                 <!-- <small>서명을 해주세요</small> -->
-                                <button class="btn btn-md btn-outline-darkgray open-modal" data-modal-id="esModal" type="button">전자서명하기</button>
+                                <!-- <button class="btn btn-md btn-outline-darkgray open-modal" data-modal-id="esModal" type="button">전자서명하기</button> -->
                             </div>
                         </div>
                     </div>
