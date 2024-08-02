@@ -235,7 +235,7 @@
 }
 
 .product-text button {
-    margin:  auto 0 0 0;
+    margin: auto 0 0 0;
 }
 
 .product h5,
@@ -365,6 +365,8 @@
 }
 
 .card-content p span {
+    align-items: center;
+    display: flex;
     font-size: var(--pass-text-mn);
 }
 
@@ -1209,4 +1211,68 @@ hr.line {
     background-color: rgba(255, 255, 255, 0);
     border: 2px solid transparent;
     cursor: pointer;
+}
+
+/* **************************************** *
+ * PASS 이용고객안내
+ * **************************************** */
+.pass-info {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin: 0 0 60px 0;
+}
+
+.pass-area {
+    align-items: center;
+    background: var(--pass-sub-bg);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px;
+}
+
+.pass-area img {
+    width: 80px;
+}
+
+.pass-area h1 {
+    margin: 8px 0 0 0;
+}
+
+.pass-area p {
+    color: var(--pass-darkgray);
+    font-size: var(--pass-text-md);
+    text-align: center;
+}
+
+.pass-area p span {
+    color: var(--pass-red);
+}
+
+.lgu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lgu button {
+    font-size: var(--pass-text-lg);
+    width: 100%;
+}
+
+.skt {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skt button {
+    background: var(--pass-violet);
+    color: white;
+    font-size: var(--pass-text-lg);
+    width: 100%;
 }
