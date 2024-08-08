@@ -1053,6 +1053,10 @@ hr.line {
     background: var(--dr-blue);
 }
 
+.day span.inoculation {
+    background: rgba(0, 53, 149, 0.1);
+}
+
 .day span.shopping {
     background: var(--pass-black);
 }
