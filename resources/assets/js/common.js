@@ -104,6 +104,10 @@ $(document).ready(function () {
         }
     });
 
+    $('.btn-check').click(function() {
+        $(this).toggleClass('active');
+    })
+
 });
 
 function setAppHeight() {

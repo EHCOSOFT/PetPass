@@ -227,3 +227,9 @@
     height: 1.5rem;
     width: 1.5rem;
 }
+
+.i-circle-checked {
+    background: url(../img/ico/i-circle-checked-red.png);
+    height: 24px;
+    width: 24px;
+}
