@@ -714,6 +714,11 @@ input:disabled {
     font-size: var(--pass-text-sm);
 }
 
+.input-group p {
+    color: var(--pass-darkgray);
+    font-size: var(--pass-text-sm);
+}
+
 .input-group.error input {
     border: 1px solid var(--pass-red);
 }
@@ -1039,7 +1044,7 @@ input:disabled {
 
 .radio-group.red h4 {
     color: var(--pass-black);
-    font-size: var(--pass-text-md);
+    font-size: var(--pass-text-lg);
     font-weight: 400;
     margin: 0;
     text-align: left;
@@ -1066,7 +1071,7 @@ input:disabled {
     border: 1px solid var(--pass-line);
     border-radius: 0.5rem;
     color: var(--pass-gray);
-    font-size: var(--pass-text-md);
+    font-size: 15px;
     font-weight: 400;
     flex: 1 auto;
     height: 2.75rem;
@@ -1327,7 +1332,7 @@ input:disabled {
     -webkit-appearance: none;
     /* safari */
     align-items: center;
-    background: var(--pass-write);
+    background: url(../img/ico/i-calendar.png) no-repeat 50%/24px;
     background-position: right 12px center;
     border: 1px solid var(--pass-line);
     border-radius: 0.5rem;

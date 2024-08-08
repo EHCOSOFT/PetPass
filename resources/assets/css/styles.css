@@ -417,7 +417,7 @@ hr.line {
     display: flex;
     flex-direction: column;
     min-height: calc(var(--app-height) - 4.25rem);
-    margin: 1.25rem 0 0 0;
+    margin: 1.25rem 0;
 }
 
 .pet-reg-wrap h5 {
@@ -426,10 +426,10 @@ hr.line {
 
 .pet-reg-wrap .btn-group {
     background: var(--pass-write);
-    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     margin: auto 0 0 0;
-    padding: 1rem 1.125rem;
-    position: sticky;
 }
 
 .pet-reg-check {
@@ -496,19 +496,23 @@ hr.line {
 .pet-header h3 span {
     background: none;
     color: var(--pass-black);
+    display: block;
     font-size: 1rem;
     overflow: hidden;
     margin: 0;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: calc(100vw - 270px);
+    width: calc(100vw - 270px);
     /* max-width: 100px; */
 }
 
 .pet-header span {
+    align-items: center;
     background: var(--pass-black-02);
     color: var(--pass-write);
+    display: flex;
     font-size: var(--pass-text-mn);
+    justify-content: center;
     margin: 0 0 0 auto;
 }
 
