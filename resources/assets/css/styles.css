@@ -512,7 +512,7 @@ hr.line {
     margin: 0;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: calc(100vw - 270px);
+    max-width: calc(100vw - 270px);
     /* max-width: 100px; */
 }
 
