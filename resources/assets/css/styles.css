@@ -417,7 +417,7 @@ hr.line {
     display: flex;
     flex-direction: column;
     min-height: calc(var(--app-height) - 4.25rem);
-    margin: 1.25rem 0;
+    margin: 1.25rem 0l
 }
 
 .pet-reg-wrap h5 {
@@ -429,7 +429,17 @@ hr.line {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin: 16px 0 0 0;
+    margin: auto 0 0 0;
+    padding: 16px;
+    width: 100%;
+}
+
+.pet-reg-wrap .btn-group.p-none {
+    padding: 0;
+}
+
+.pet-reg-wrap .btn-group button {
+    width: 100%;
 }
 
 .pet-reg-check {
