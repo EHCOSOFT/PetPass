@@ -324,7 +324,12 @@ button:focus {
     width: 100%;
 }
 
+.btn-group.last {
+    flex-direction: row !important;
+}
+
 .btn-group.last button:last-child {
+    flex: 0 0 auto;
     width: 60% !important;
 }
 

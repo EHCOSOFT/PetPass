@@ -1175,7 +1175,7 @@ hr.line {
 }
 
 .map-wrap {
-    background: red;
+    /* background: red; */
     /* height: calc(var(--app-height) - 247px); */
     height: calc(var(--app-height) - 103px);
     /* 광고영역이 없을시 */
