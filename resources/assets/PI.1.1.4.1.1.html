@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Pet PASS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- START : Header -->
+        <header class="header">
+            <div class="container">
+                <a href="#">
+                    <i class="ico i-back"></i>
+                </a>
+                <h3>반려동물 등록</h3>
+            </div>
+        </header>
+        <!-- END : Header -->
+
+        <!-- START : Content -->
+        <main>
+            <div class="pass-wrap">
+                <div class="container">
+                    <img src="img/pass.png" alt="PASS">
+                    <h1>반려동물 등록번호 조회를 위해<br>
+                        PASS로 인증해주세요.</h1>
+                    <button type="button" class="btn btn-gray btn-md">PASS 인증하기</button>
+                </div>
+            </div>
+        </main>
+        <!-- END : Content -->
+
+    </div>
+
+    <!-- START : checkModal -->
+    <div id="checkModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>인증이 완료되었다면<br>확인버튼을 눌러주세요.</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group last">
+                        <button type="button" class="btn btn-md btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-md btn-gray">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : checkModal -->
+
+    <!-- START : loadingModal -->
+    <div id="loadingModal" class="modal-wrap loading-modal">
+        <div class="modal-inner">
+            <div id="spinner"></div>
+            <h6>정보를 확인하고 있습니다<br>잠시만 기다려주세요.</h6>
+        </div>
+    </div>
+    <!-- END : loadingModal -->
+
+    <!-- START : completeModal -->
+    <div id="completeModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>조회가 완료되었습니다.<br>
+                        다음 화면에서 반려동물 선택 후<br>
+                        추가 정보를 입력해 주세요.</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-md btn-gray btn-modal-close">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : completeModal -->
+
+    <!-- START : cerFailureModal -->
+    <div id="cerFailureModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>간편인증에 실패했습니다.<br>
+                        앱 설치 또는 인증서 발급여부를<br>
+                        확인하거나, 사용자 정보(이름, 전화번호,<br>
+                        주민번호)를 확인 후 재 시도 하시기 바랍니다.</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group last">
+                        <button type="button" class="btn btn-md btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-md btn-gray">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : cerFailureModal -->
+
+    <!-- START : Script -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- END : Script -->
+</body>
+
+</html>

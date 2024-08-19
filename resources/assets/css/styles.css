@@ -25,6 +25,10 @@
     position: relative;
 }
 
+main {
+    flex: 1;
+}
+
 .service-info {
     align-items: center;
     display: flex;
@@ -416,8 +420,15 @@ hr.line {
 .pet-reg-wrap {
     display: flex;
     flex-direction: column;
-    min-height: calc(var(--app-height) - 4.25rem);
-    margin: 1.25rem 0l
+    /* min-height: calc(var(--app-height) - 4.25rem); */
+    height: 100%;
+}
+
+.pet-reg-wrap .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
 }
 
 .pet-reg-wrap h5 {
@@ -440,6 +451,10 @@ hr.line {
 
 .pet-reg-wrap .btn-group button {
     width: 100%;
+}
+
+.pet-reg-wrap button {
+    font-size: var(--pass-text-lg);
 }
 
 .pet-reg-check {
@@ -598,7 +613,13 @@ hr.line {
 
 .ad-card h3 {
     color: var(--pass-black);
+    font-size: 18px;
     margin: 0 0 .5rem 0;
+}
+
+.ad-card h6 {
+    font-size: var(--pass-text-sm);
+    line-height: 16px;
 }
 
 .ad-card img {
@@ -610,12 +631,74 @@ hr.line {
 
 .ad-card img.img-02 {
     bottom: auto;
-    top: 0;
-    height: 80px;
-    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    right: 32px;
     width: auto;
 }
 
+.ad-card img.img-03 {
+    bottom: 0;
+    top: auto;
+    height: 86px;
+    right: 0px;
+    width: 138px;
+}
+
+.bottom-ad {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0 20px 0;
+    width: 100%;
+}
+
+.bottom-ad .ad-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.bottom-ad p {
+    color: var(--pass-darkgray);
+    font-size: var(--pass-text-sm);
+}
+
+.bottom-ad button {
+    font-size: var(--pass-text-md);
+    width: 100px;
+}
+
+/* **************************************** *
+ * PI.1.1.4 ~
+ * **************************************** */
+.pass-wrap {
+    height: 100%;
+}
+
+.pass-wrap .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 40px;
+}
+
+.pass-wrap img {
+    margin: 40px 0 0 0;
+    width: 80px;
+}
+
+.pass-wrap h1 {
+    text-align: center;
+}
+
+.pass-wrap button {
+    font-size: var(--pass-text-lg);
+    margin: auto 0 20px 0;
+    width: 100%;
+}
 /* **************************************** *
  * PI.1.2.1
  * **************************************** */
@@ -1195,6 +1278,7 @@ hr.line {
     margin: auto 0 0 0;
     padding: 1rem 1.125rem;
     position: sticky;
+    z-index: 99;
 }
 
 /* **************************************** *

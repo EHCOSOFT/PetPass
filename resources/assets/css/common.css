@@ -559,6 +559,10 @@ button:disabled {
     margin: 2.5rem 0;
 }
 
+.modal-body p {
+    color: var(--pass-darkgray);
+    font-size: var(--pass-text-md);
+}
 /* **************************************** *
  * Card
  * **************************************** */
@@ -712,6 +716,7 @@ input:disabled {
 .input-group input[type=password]::placeholder,
 .input-group input[type=number]::placeholder {
     color: var(--pass-gray);
+    font-weight: 400;
 }
 
 .input-group small {
@@ -746,6 +751,24 @@ input:disabled {
     font-size: var(--pass-text-sm);
 }
 
+.input-group .text-num {
+    color: var(--pass-gray);
+    position: absolute;
+    right: 12px;
+}
+
+.input-group .text-num b{
+    color: vaR(--pass-red);
+    font-weight: 400;
+}
+
+.input-group .num-search {
+    align-items: center;
+    color: var(--pass-darkgray);
+    display: flex;
+    font-size: var(--pass-text-sm);
+    gap: 4px;
+}
 /* search */
 .input-search {
     position: relative;
@@ -1357,6 +1380,11 @@ input:disabled {
     transition: all .5s;
     text-align: left;
     width: 100%;
+}
+
+.date-group input[type="time"] {
+    background: url(../img/ico/i-time.png) no-repeat 50%/24px;
+    background-position: right 12px center;
 }
 
 .date-group input::-webkit-date-and-time-value {
