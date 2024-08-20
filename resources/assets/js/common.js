@@ -108,6 +108,12 @@ $(document).ready(function () {
         $(this).toggleClass('active');
     })
 
+    /***
+       * 펫캘린더 접종내역이 다중일경우
+    ****/
+    $('.btn-detail-list').click(function() {
+        $(this).closest('.detail-item').toggleClass('active');
+    });
 });
 
 function setAppHeight() {

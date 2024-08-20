@@ -600,7 +600,7 @@
     font-size: var(--pass-text-md);
 }
 
-.calendar-detail-body ul {
+.calendar-detail-body>ul {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -615,6 +615,7 @@
     background: #fafafa;
     border-radius: 0.5rem;
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
     padding: 0.5rem 0.75rem;
 }
@@ -689,6 +690,46 @@
 .detail-item.shopping .day {
     background: var(--dr-green);
     color: var(--pass-write);
+}
+
+.detail-item .detail-item-header {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.detail-item .btn-detail-list {
+    background: var(--pass-write);
+    border-radius: 100px;
+    border: 0;
+    height: 36px;
+    margin: 0 0 0 auto;
+    width: 36px;
+}
+
+.detail-item.active .btn-detail-list i {
+    transform: rotate(180deg);
+}
+
+.detail-item-list {
+    display: none;
+    flex-direction: column;
+    gap: 4px !important;
+}
+
+.detail-item.active .detail-item-list {
+    display: flex;
+    width: 100%;
+}
+
+.detail-item-list li {
+    background: var(--pass-write);
+    border-radius: 8px;
+    color: var(--pass-black-02);
+    font-size: var(--pass-text-sm);
+    padding: 4px 12px;
+    text-align: left;
 }
 
 .calendar-detail-footer {
