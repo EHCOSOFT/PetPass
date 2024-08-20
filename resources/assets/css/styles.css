@@ -432,7 +432,7 @@ hr.line {
 }
 
 .pet-reg-wrap h5 {
-    margin: 0.75rem 0 1.5rem 0;
+    margin: 0.75rem 0 .25rem 0;
 }
 
 .pet-reg-wrap .btn-group {
@@ -455,6 +455,10 @@ hr.line {
 
 .pet-reg-wrap button {
     font-size: var(--pass-text-lg);
+}
+
+.text-area {
+    margin: 20px 0 0 0;
 }
 
 .pet-reg-check {
@@ -699,6 +703,7 @@ hr.line {
     margin: auto 0 20px 0;
     width: 100%;
 }
+
 /* **************************************** *
  * PI.1.2.1
  * **************************************** */
