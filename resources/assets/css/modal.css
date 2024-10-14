@@ -530,6 +530,8 @@
 }
 
 .alarm-wrap span {
+    align-items: center;
+    display: flex;
     font-size: var(--pass-text-mn);
     margin: 0 0 0 auto;
 }
