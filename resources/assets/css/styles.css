@@ -955,7 +955,7 @@ hr.line {
 .calendar-header {
     align-items: center;
     display: flex;
-    gap: .25rem;
+    gap: 0;
     justify-content: center;
     position: relative;
     margin: 0 0 1.25rem 0;
@@ -1064,9 +1064,10 @@ hr.line {
     color: var(--pass-darkgray);
     font-size: var(--pass-text-mn);
     height: 1.5rem;
+    padding: 0;
     position: absolute;
-    padding: 0 0.5rem;
     right: 0;
+    width: 34px;
 }
 
 .weekdays {
