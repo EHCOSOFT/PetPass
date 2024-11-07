@@ -19,7 +19,7 @@
                     <i class="ico i-back"></i>
                 </a>
                 <h3>펫 캘린더</h3>
-                <i class="ico i-alerm open-modal" data-modal-id="alarmModal"></i>
+                <!-- <i class="ico i-alerm open-modal" data-modal-id="alarmModal"></i> -->
             </div>
         </header>
         <!-- END : Header -->
@@ -93,9 +93,15 @@
                     <!-- <button type="button" class="btn-add-schedule open-modal" data-modal-id="addScheduleModal">
                         <i class="ico i-plus-w"></i>
                     </button> -->
-                    <a class="btn-add-schedule" href="PI.1.6.2.html">
-                        <i class="ico i-plus-w"></i>
-                    </a>
+                    <!-- 20241107 수정 -->
+                    <div class="btn-fixed">
+                        <a href="javascript:void(0);" class="btn-alerm open-modal" data-modal-id="alarmModal">
+                            <i class="ico i-alerm"></i>
+                        </a>
+                        <a class="btn-add-schedule" href="PI.1.6.2.html">
+                            <i class="ico i-plus-w"></i>
+                        </a>
+                    </div>
                 </div>
             </section>
         </main>
@@ -122,7 +128,7 @@
     <!-- END : scheduleDelModal -->
 
     <!-- START : alarmModal -->
-    <div id="alarmModal" class="modal-wrap toggle-modal active">
+    <div id="alarmModal" class="modal-wrap toggle-modal">
         <div class="modal-inner">
             <div class="modal-content">
                 <div class="modal-header">

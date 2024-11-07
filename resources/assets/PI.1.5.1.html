@@ -123,6 +123,13 @@
                             </div>
                         </li>
                     </ul>
+
+                    <!-- 20241107 수정 -->
+                    <div class="btn-fixed">
+                        <a href="javascript:void(0);" class="btn-alerm open-modal" data-modal-id="alarmModal">
+                            <i class="ico i-alerm"></i>
+                        </a>
+                    </div>
                 </div>
             </section>
         </main>
@@ -130,7 +137,41 @@
 
     </div>
 
+<!-- START : alarmModal -->
+<div id="alarmModal" class="modal-wrap toggle-modal">
+    <div class="modal-inner">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>알림 설정</h2>
+                <!-- <span class="btn btn-mn btn-outline-gray set">설정</span> -->
+            </div>
+            <div class="modal-body">
+                <div class="alarm-wrap">
+                    <!-- <div class="card">
+                        <div class="card-header">
+                            <h4>캘린더 일정 알림</h4>
+                            <span class="btn btn-r btn-mn blue">알림수신</span>
+                        </div>
+                        <h6>잊어 버리지 않게<br>미리 안내해드릴게요.</h6>
+                    </div> -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>이벤트 안내 알림</h4>
+                            <span class="btn btn-r btn-mn red">알림해제</span>
+                        </div>
+                        <h6>새로운 놀이터가 등록되거나<br>
+                            반려동물 소식이 있는 경우 안내해드릴게요.</h6>
+                    </div>
+                </div>
+                <div class="btn-group mt-1">
+                    <button class="btn btn-md btn-outline-gray set">설정</button>
+                </div>
+            </div>
 
+        </div>
+    </div>
+</div>
+<!-- END : alarmModal -->
 
     <!-- START : petModal -->
     <div id="petModal" class="modal-wrap toggle-modal">
