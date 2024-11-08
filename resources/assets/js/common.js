@@ -104,15 +104,20 @@ $(document).ready(function () {
         }
     });
 
-    $('.btn-check').click(function() {
+    $('.btn-check').click(function () {
         $(this).toggleClass('active');
     })
 
     /***
        * 펫캘린더 접종내역이 다중일경우
     ****/
-    $('.btn-detail-list').click(function() {
+    $('.btn-detail-list').click(function () {
         $(this).closest('.detail-item').toggleClass('active');
+    });
+
+    // .btn-fixed-menu 버튼 클릭 시 a 태그 토글
+    $('.btn-fixed-menu').click(function () {
+        $('.btn-fixed a').toggleClass('active');
     });
 });
 

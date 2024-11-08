@@ -1173,6 +1173,7 @@ hr.line {
 }
 
 .btn-fixed {
+    align-items: center;
     bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -1186,13 +1187,40 @@ hr.line {
     background: var(--pass-red);
     border-radius: 100px;
     border: 0;
+    display: none;
+    height: 36px;
+    justify-content: center;
+    width: 36px;
+}
+
+.btn-alerm {
+    align-items: center;
+    background: var(--pass-red);
+    border-radius: 100px;
+    border: 0;
+    display: none;
+    height: 36px;
+    justify-content: center;
+    width: 36px;
+}
+
+.btn-add-schedule.active,
+.btn-alerm.active {
+    display: flex;
+}
+
+.btn-fixed-alerm {
+    align-items: center;
+    background: var(--pass-red);
+    border-radius: 100px;
+    border: 0;
     display: flex;
     height: 48px;
     justify-content: center;
     width: 48px;
 }
 
-.btn-alerm {
+.btn-fixed-menu {
     align-items: center;
     background: var(--pass-red);
     border-radius: 100px;
