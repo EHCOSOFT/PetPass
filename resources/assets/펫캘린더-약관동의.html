@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/pet-common.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrap agreeWrap">
+    <!-- 타이틀바 -->
+    <div class="title-bar">
+      <p class="title-text">펫캘린더</p>
+      <button class="btn-close">
+        <img src="img/btn/btn-close.png" alt="닫기버튼" />
+      </button>
+    </div>
+    <div class="container">
+      <!-- 타이틀 -->
+      <section class="section-desc">
+        <h3>
+          반려동물의 함께하는 소중한 날<br />쉽고 편리하게 관리해보세요!
+        </h3>
+        <div>
+          <span class="color-text">무료회원</span> 제공 서비스 <br />
+          생일, 주요 접종 자동 알림<br />
+          - 미용, 쇼핑을 개인 일정 등록, 관리
+        </div>
+        <!-- 배너 -->
+        <div class="banner">배너 확인용</div>
+      </section>
+
+      <!-- 약관동의 -->
+      <section class="section-terms">
+        <div class="all-check">
+          <input type="checkbox" id="checkAll" />
+          <label for="checkAll">
+            전체 동의 <span class="color-select">(선택 항목 포함)</span>
+          </label>
+        </div>
+        <ul class="terms-list">
+          <li>
+            <input type="checkbox" id="check1" /><label for="check1">펫캘린더 서비스 이용약관(필수)</label>
+          </li>
+          <li>
+            <input type="checkbox" id="check2" /><label for="check2">펫캘린더 개인정보 수집/이용 동의(필수)</label>
+          </li>
+          <li>
+            <input type="checkbox" id="check3" /><label for="check3">펫캘린더 개인정보 제3자 제공 동의(필수)</label>
+          </li>
+          <li class="color-select">
+            <input type="checkbox" id="check4" /><label for="check4">펫캘린더 마케팅 수신 동의(선택)</label>
+          </li>
+          <li class="color-select">
+            <input type="checkbox" id="check5" /><label for="check5">펫캘린더 마케팅 활용 동의(선택)</label>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <!-- 버튼영역 -->
+    <section class="section-agree-btn">
+      <button class="btn-agree">
+        무료서비스 약관동의
+        <!-- <img src="img/btn/btn-agree.png" alt="무료서비스 약관 동의" /> -->
+      </button>
+    </section>
+  </div>
+</body>
+
+</html>
