@@ -238,6 +238,10 @@ h6,
     margin-top: 2.5rem !important;
 }
 
+.mt-8 {
+    margin: 8px 0 0 0;
+}
+
 .mb-5 {
     margin-bottom: 20px;
 }
