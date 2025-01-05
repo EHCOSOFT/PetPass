@@ -1409,7 +1409,7 @@ hr.line {
 .pass-info {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 72px;
     margin: 0 0 60px 0;
 }
 
@@ -1461,7 +1461,19 @@ hr.line {
 }
 
 .skt button {
-    background: var(--pass-violet);
+    color: white;
+    font-size: var(--pass-text-lg);
+    width: 100%;
+}
+
+.kt {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.kt button {
     color: white;
     font-size: var(--pass-text-lg);
     width: 100%;
