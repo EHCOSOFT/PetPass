@@ -28,8 +28,27 @@
         <!-- START : Content -->
         <main>
             <section class="event">
-                <img src="img/event/20250627_event.png" alt="">
-                <a href="https://www.naver.com/" class="event-button"></a>
+                <img src="img/event/20250627_event.png" alt="" usemap="#eventmap">
+                <map name="eventmap">
+                    <area target="" alt="화성시 반려견놀이터" title="" href="https://www.naver.com" coords="203,13312,1958,13651"
+                        shape="rect">
+                    <area target="" alt="고양시 반려견놀이터" title="" href="https://www.naver.com" coords="204,13707,1954,14046"
+                        shape="rect">
+                    <area target="" alt="수원시 반려견놀이터" title="" href="https://www.naver.com" coords="200,14096,1956,14439"
+                        shape="rect">
+                    <area target="" alt="동작구 반려견놀이터" title="" href="https://www.naver.com" coords="200,14499,1956,14834"
+                        shape="rect">
+                    <area target="" alt="구리시 반려견놀이터" title="" href="https://www.naver.com" coords="200,14895,1956,15231"
+                        shape="rect">
+                    <area target="" alt="대전시 반려견공원" title="" href="https://www.naver.com" coords="206,15292,1956,15630"
+                        shape="rect">
+                    <area target="" alt="창원시 펫빌리지" title="" href="https://www.naver.com" coords="204,15684,1960,16023"
+                        shape="rect">
+                    <area target="" alt="은평구 반려견놀이터" title="" href="https://www.naver.com" coords="208,16086,1950,16418"
+                        shape="rect">
+                    <area target="" alt="도깨비젤라또" title="" href="https://www.naver.com" coords="197,16475,1956,16815"
+                        shape="rect">
+                </map>
             </section>
         </main>
         <!-- END : Content -->
@@ -39,8 +58,15 @@
     <!-- START : Script -->
     <script src="lib/jquery.min.js"></script>
     <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/imageMapResizer.min.js"></script>
     <script src="js/common.js"></script>
     <!-- END : Script -->
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            imageMapResize(); // 좌표 자동 조절
+        });
+    </script>
 </body>
 
 </html>
