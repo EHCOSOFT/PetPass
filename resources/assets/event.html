@@ -30,24 +30,26 @@
             <section class="event">
                 <img src="img/event/20250627_event.png" alt="" usemap="#eventmap">
                 <map name="eventmap">
-                    <area target="" alt="화성시 반려견놀이터" title="" href="https://www.naver.com" coords="203,13312,1958,13651"
-                        shape="rect">
-                    <area target="" alt="고양시 반려견놀이터" title="" href="https://www.naver.com" coords="204,13707,1954,14046"
-                        shape="rect">
-                    <area target="" alt="수원시 반려견놀이터" title="" href="https://www.naver.com" coords="200,14096,1956,14439"
-                        shape="rect">
-                    <area target="" alt="동작구 반려견놀이터" title="" href="https://www.naver.com" coords="200,14499,1956,14834"
-                        shape="rect">
-                    <area target="" alt="구리시 반려견놀이터" title="" href="https://www.naver.com" coords="200,14895,1956,15231"
-                        shape="rect">
-                    <area target="" alt="대전시 반려견공원" title="" href="https://www.naver.com" coords="206,15292,1956,15630"
-                        shape="rect">
-                    <area target="" alt="창원시 펫빌리지" title="" href="https://www.naver.com" coords="204,15684,1960,16023"
-                        shape="rect">
-                    <area target="" alt="은평구 반려견놀이터" title="" href="https://www.naver.com" coords="208,16086,1950,16418"
-                        shape="rect">
-                    <area target="" alt="도깨비젤라또" title="" href="https://www.naver.com" coords="197,16475,1956,16815"
-                        shape="rect">
+                    <area target="" alt="이벤트 신청하기" title="이벤트 신청하기" href="javascript:void(0);"
+                        coords="194,1353,1955,1694" shape="rect" class="open-modal" data-modal-id="termsAgreementModal">
+                    <area target="" alt="화성시 반려견놀이터" title="화성시 반려견놀이터" href="https://www.naver.com"
+                        coords="205,12327,1955,12670" shape="rect">
+                    <area target="" alt="고양시 반려견놀이터" title="고양시 반려견놀이터" href="https://www.naver.com"
+                        coords="207,12727,1963,13067" shape="rect">
+                    <area target="" alt="수원시 반려견놀이터" title="수원시 반려견놀이터" href="https://www.naver.com"
+                        coords="201,13124,1968,13466" shape="rect">
+                    <area target="" alt="동작구 반려견놀이터" title="동작구 반려견놀이터" href="https://www.naver.com"
+                        coords="203,13523,1963,13857" shape="rect">
+                    <area target="" alt="구리시 반려견놀이터" title="구리시 반려견놀이터" href="https://www.naver.com"
+                        coords="203,13918,1963,14246" shape="rect">
+                    <area target="" alt="대전시 반려견공원" title="대전시 반려견공원" href="https://www.naver.com"
+                        coords="205,14311,1957,14639" shape="rect">
+                    <area target="" alt="창원시 펫빌리지" title="창원시 펫빌리지" href="https://www.naver.com"
+                        coords="207,14712,1961,15042" shape="rect">
+                    <area target="" alt="은평구 반려견놀이터" title="은평구 반려견놀이터" href="https://www.naver.com"
+                        coords="211,15109,1963,15441" shape="rect">
+                    <area target="" alt="도깨비젤라또" title="도깨비젤라또" href="https://www.naver.com"
+                        coords="213,15498,1959,15834" shape="rect">
                 </map>
             </section>
         </main>
@@ -55,18 +57,164 @@
 
     </div>
 
-    <!-- START : Script -->
-    <script src="lib/jquery.min.js"></script>
-    <script src="lib/swiper-bundle.min.js"></script>
-    <script src="lib/imageMapResizer.min.js"></script>
-    <script src="js/common.js"></script>
-    <!-- END : Script -->
+    <!-- START : termsAgreementModal -->
+    <div id="termsAgreementModal" class="modal-wrap toggle-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="btn-modal-close">펫패스 이벤트 약관동의</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="check-area">
+                            <div class="check-group blue-circle">
+                                <input type="checkbox" id="chkAll">
+                                <label for="chkAll">약관 전체동의</label>
+                            </div>
+                        </div>
+                        <div class="check-wrap">
+                            <div class="check-group">
+                                <input type="checkbox" id="chk">
+                                <label for="chk">펫패스 이벤트 개인정보 수집 및 이용 동의(필수)</label>
+                                <a href="javascript:void(0);" class="open-modal" data-modal-id="terms01"><i
+                                        class="ico i-arrow-right"></i></a>
+                            </div>
+                            <div class="check-group">
+                                <input type="checkbox" id="chk">
+                                <label for="chk">펫패스 이벤트 개인정보제3자제공동의(필수)</label>
+                                <a href="javascript:void(0);" class="open-modal" data-modal-id="terms02"><i
+                                        class="ico i-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-md btn-blue open-modal"
+                                data-modal-id="infoModal">동의</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : termsAgreementModal -->
 
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            imageMapResize(); // 좌표 자동 조절
-        });
-    </script>
+    <!-- START : 펫패스 이벤트 개인정보 수집 및 이용 동의 -->
+    <div id="terms01" class="modal-wrap full-modal modal-custom">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>펫패스 이벤트 개인정보 수집 및 이용 동의</h3>
+                    <div class="terms">
+                        <p>펫패스 이벤트 참여를 위해, 다음과 같이 (주)우연컴퍼니가 본인의 개인정보를 수집/이용하는 것에 동의합니다.
+                            해당 개인정보는 아래 목적으로 이용되며 이외의 용도로는 활용되지 않습니다.</p>
+                        <table>
+                            <colgroup>
+                                <col style="width: 110px;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>수집/이용목적</th>
+                                    <td>본인확인</td>
+                                </tr>
+                                <tr>
+                                    <th>수집항목</th>
+                                    <td>고객 ID, 휴대폰번호, 펫세권 가입여부</td>
+                                </tr>
+                                <tr>
+                                    <th>보유기간</th>
+                                    <td>이벤트 종료 후 2개월 보관 후 파기</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>※ 이 내용은 이벤트 응모를 위한 개인정보 수집/이용에 대한 동의입니다. 동의하지 않은 경우 이벤트에 응모하실 수 없습니다.<br>
+                            ※ 법렵에 따른 개인정보의 수집/이용, 계약의 이행/편의 증진을 위한 개인정보 처리 및 처리 위탁과 관련된 일반사항은 서비스의 개인정보처리방침에 따릅니다.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button class="btn-modal-close btn btn-md btn-blue">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : 펫패스 이벤트 개인정보 수집 및 이용 동의 -->
+
+    <!-- START : 펫패스 이벤트 개인정보 제3자 제공동의 -->
+    <div id="terms02" class="modal-wrap full-modal modal-custom">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>펫패스 이벤트 개인정보 제3자 제공동의</h3>
+                    <div class="terms">
+                        <p>펫패스 이벤트 참여를 위해, 다음과 같이 개인정보를 제3자에게 제공하며, 제공 목적 외의 용도로 활용되지 않습니다.</p>
+                        <table>
+                            <colgroup>
+                                <col style="width: 100px;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>제공받는 자</th>
+                                    <td>케이티(주)</td>
+                                </tr>
+                                <tr>
+                                    <th>이용 목적</th>
+                                    <td>이벤트 종료 후 정산</td>
+                                </tr>
+                                <tr>
+                                    <th>제공 항목</th>
+                                    <td>휴대폰번호, 이벤트를 통한 적립내역</td>
+                                </tr>
+                                <tr>
+                                    <th>보유기간</th>
+                                    <td>이벤트 종료 후 5년(거래에 관한 장부 및 증비)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>※ 이 내용은 이벤트 응모를 위한 개인정보 제3자 정보제공에 대한 동의입니다. 동의하지 않은 경우 이벤트에 응모하실 수 없습니다.<br>
+                            ※법령에 따른 개인정보의 수집/이용, 계약의 이행/편의 증진을 위한 개인정보 처리 및 처리 위탁과 관련된 일반사항은 서비스의 개인정보처리방침에 따릅니다.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button class="btn-modal-close btn btn-md btn-blue">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : 펫패스 이벤트 개인정보 제3자 제공동의 -->
+
+    <!-- START : infoModal -->
+    <div id="infoModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h1>안내</h1>
+                    <h4>이벤트 신청 내역이 존재합니다.</h4>
+                    <div class="modal-footer">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-md btn-blue btn-modal-close">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END : infoModal -->
+
+        <!-- START : Script -->
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/swiper-bundle.min.js"></script>
+        <script src="lib/imageMapResizer.min.js"></script>
+        <script src="js/common.js"></script>
+        <!-- END : Script -->
+
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                imageMapResize(); // 좌표 자동 조절
+            });
+        </script>
 </body>
 
 </html>

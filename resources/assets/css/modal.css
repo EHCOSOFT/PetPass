@@ -756,3 +756,21 @@
     line-height: 24px;
     text-align: center;
 }
+
+.modal-custom .modal-body {
+    margin: 0;
+}
+
+.modal-custom table th {
+    background: var(--pass-sub-bg);
+}
+
+.modal-custom table td {
+    color: var(--pass-darkgray);
+    text-align: left;
+}
+
+.modal-custom .modal-footer {
+    bottom: 0;
+    position: sticky;
+}
