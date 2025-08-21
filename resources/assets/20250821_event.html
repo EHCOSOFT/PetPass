@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!-- Safari -->
+    <meta name="format-detection" content="telephone=no" />
+    <title>Pet PASS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- START : Header -->
+        <!-- <header class="header">
+            <div class="container">
+                <a href="#">
+                    <i class="ico i-back"></i>
+                </a>
+                <h3>이벤트</h3>
+            </div>
+        </header> -->
+        <!-- END : Header -->
+
+        <!-- START : Content -->
+        <main>
+            <section class="event type2">
+                <img src="img/event/20250821_event.png" alt="" usemap="#eventmap">
+                <a href="javascript:void(0)" data-modal-id="termsAgreementModal" class="open-modal">
+                    <img src="img/event/event_text.png" alt="">
+                </a>
+            </section>
+        </main>
+        <!-- END : Content -->
+
+    </div>
+
+    <!-- START : termsAgreementModal -->
+    <div id="termsAgreementModal" class="modal-wrap toggle-modal event-modal">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="btn-modal-close">전화번호 입력</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="radio-wrap">
+                            <div class="radio-group outline">
+                                <input type="radio" id="skt" name="radio01">
+                                <label for="skt">SKT</label>
+                            </div>
+                            <div class="radio-group outline">
+                                <input type="radio" id="kt" name="radio01">
+                                <label for="kt">KT</label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="전화번호 입력 ( - 제외 11자리 입력)">
+                        </div>
+                        <div class="check-wrap">
+                            <div class="check-group">
+                                <input type="checkbox" id="chk">
+                                <label for="chk">개인정보수집이용약관(필수)</label>
+                                <a href="javascript:void(0);" class="open-modal" data-modal-id="terms01">보기</a>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-md btn-blue open-modal" data-modal-id="infoModal">약관 동의
+                                후 확인</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : termsAgreementModal -->
+
+    <!-- START : 펫패스 이벤트 개인정보 수집 및 이용 동의 -->
+    <div id="terms01" class="modal-wrap full-modal modal-custom active">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>개인정보수집이용약관(필수)</h3>
+                    <div class="terms">
+                        <p>반려동물등록 캠페인 참여를 위해, 다음과 같이 (주)우연컴퍼니가 본인의 개인정보를 수집/이용하는 것에 동의합니다.
+                            해당 개인정보는 아래 목적으로 이용되며 이외의 용도로는 활용되지 않습니다.</p>
+                        <table>
+                            <colgroup>
+                                <col style="width: 110px;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>수집/이용목적</th>
+                                    <td>당첨자 선정 및 경품 발송
+                                        및 이벤트 운영 관리</td>
+                                </tr>
+                                <tr>
+                                    <th>수집항목</th>
+                                    <td>통신사, 휴대폰번호</td>
+                                </tr>
+                                <tr>
+                                    <th>보유기간</th>
+                                    <td>이벤트 종료 후 3개월 보관 후 파기</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>※ 이 내용은 이벤트 응모를 위한 개인정보 수집/이용에 대한 동의입니다. 동의하지 않은 경우 이벤트에 응모하실 수 없습니다.<br>
+                            ※ 법령에 따른 개인정보의 수집/이용, 계약의 이행/편의 증진을 위한 개인정보 처리 및 처리 위탁과 관련된 일반사항은 서비스의 개인정보처리방침에 따릅니다.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button class="btn-modal-close btn btn-md btn-blue">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : 펫패스 이벤트 개인정보 수집 및 이용 동의 -->
+
+    <!-- START : 펫패스 이벤트 개인정보 제3자 제공동의 -->
+    <div id="terms02" class="modal-wrap full-modal modal-custom">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>펫패스 이벤트 개인정보 제3자 제공동의</h3>
+                    <div class="terms">
+                        <p>펫패스 이벤트 참여를 위해, 다음과 같이 개인정보를 제3자에게 제공하며, 제공 목적 외의 용도로 활용되지 않습니다.</p>
+                        <table>
+                            <colgroup>
+                                <col style="width: 100px;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>제공받는 자</th>
+                                    <td>케이티(주)</td>
+                                </tr>
+                                <tr>
+                                    <th>이용 목적</th>
+                                    <td>이벤트 종료 후 정산</td>
+                                </tr>
+                                <tr>
+                                    <th>제공 항목</th>
+                                    <td>휴대폰번호, 이벤트를 통한 적립내역</td>
+                                </tr>
+                                <tr>
+                                    <th>보유기간</th>
+                                    <td>이벤트 종료 후 5년(거래에 관한 장부 및 증비)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>※ 이 내용은 이벤트 응모를 위한 개인정보 제3자 정보제공에 대한 동의입니다. 동의하지 않은 경우 이벤트에 응모하실 수 없습니다.<br>
+                            ※법령에 따른 개인정보의 수집/이용, 계약의 이행/편의 증진을 위한 개인정보 처리 및 처리 위탁과 관련된 일반사항은 서비스의 개인정보처리방침에 따릅니다.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button class="btn-modal-close btn btn-md btn-blue">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END : 펫패스 이벤트 개인정보 제3자 제공동의 -->
+
+    <!-- START : infoModal -->
+    <div id="infoModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h1>안내</h1>
+                    <h4>이벤트 신청 내역이 존재합니다.</h4>
+                    <div class="modal-footer">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-md btn-blue btn-modal-close">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END : infoModal -->
+
+        <!-- START : Script -->
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/swiper-bundle.min.js"></script>
+        <script src="lib/imageMapResizer.min.js"></script>
+        <script src="js/common.js"></script>
+        <!-- END : Script -->
+
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                imageMapResize(); // 좌표 자동 조절
+            });
+        </script>
+</body>
+
+</html>

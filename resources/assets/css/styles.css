@@ -1407,6 +1407,28 @@ hr.line {
     color: var(--pass-write);
 }
 
+.event.type2 {
+    position: relative;
+}
+
+.event.type2 a {
+    align-items: center;
+    bottom: 0;
+    background: #FFE91C;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: unset;
+    transform: unset;
+    width: 100%;
+}
+
+.event.type2 a img {
+    height: 18px;
+    width: fit-content;
+}
 /* **************************************** *
  * PASS 이용고객안내
  * **************************************** */
